@@ -1,6 +1,7 @@
 ---
-title: Raspberry Pi Setup
+title: Raspberry Setup
 contributors: [LoSk-p, dergudzon, Leemo94]
+locale: 'ru'
 translated: false
 ---
 
