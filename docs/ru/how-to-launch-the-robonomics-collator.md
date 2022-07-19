@@ -74,7 +74,7 @@ root@robokusama-collator-screencast:~# robonomics \
    root@robokusama-collator-screencast:~# tar -xf robonomics-$ROBONOMICS_VERSION-x86_64-unknown-linux-gnu.tar.gz
    root@robokusama-collator-screencast:~# mv robonomics /usr/local/bin/
    ```
-   ![Download Robonomics 1.4.0 binary](../images/how-to-launch-the-robonomics-collator/wget_binary.png)
+   ![Download Robonomics 1.4.0 binary](./images/how-to-launch-the-robonomics-collator/wget_binary.png)
 
 
 3. Create the systemd service file named *robonomics.service*:
@@ -110,7 +110,7 @@ root@robokusama-collator-screencast:~# robonomics \
     [Install]
     WantedBy=multi-user.target
     ```
-    ![Create Robonomics service file](../images/how-to-launch-the-robonomics-collator/nano_robonomics_service.png)
+    ![Create Robonomics service file](./images/how-to-launch-the-robonomics-collator/nano_robonomics_service.png)
 
 
     ```
@@ -146,7 +146,7 @@ Instructions:
     root@robokusama-collator-screencast:~# wget https://ksm-rocksdb.polkashots.io/snapshot -O kusama.RocksDb.tar.lz4
     root@robokusama-collator-screencast:~# lz4 -c -d kusama.RocksDb.tar.lz4 | tar -x -C %BASE_PATH%/polkadot/chains/ksmcc3
     ```
-    ![Download Kusama snapshot](../images/how-to-launch-the-robonomics-collator/wget_kusama_snapshot.png)
+    ![Download Kusama snapshot](./images/how-to-launch-the-robonomics-collator/wget_kusama_snapshot.png)
 
 
     You can remove the downloaded archive after succesful unpacking:
@@ -165,4 +165,4 @@ Instructions:
     ```
     root@robokusama-collator-screencast:~# journalctl -u robonomics.service -f
     ```    
-    ![Check service logs](../images/how-to-launch-the-robonomics-collator/finish_journalctl.png)
+    ![Check service logs](./images/how-to-launch-the-robonomics-collator/finish_journalctl.png)

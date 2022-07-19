@@ -16,14 +16,14 @@ http://<raspberry_address>:8123
 
 Go to `Integrations` tab, press `Add integration` and choose `Xiaomi Miio`:
 
-![integration](../images/home-assistant/integration.png)
+![integration](./images/home-assistant/integration.png)
 
 Then fill your username (or phone) and password from Mi Home account and choose your country server:
 
-![auth](../images/home-assistant/auth.png)
+![auth](./images/home-assistant/auth.png)
 
 Press `Submit` and choose your Vacuum (Robot vacuum in this example):
 
-![vacuum](../images/home-assistant/vacuum_int.png)
+![vacuum](./images/home-assistant/vacuum_int.png)
 
 After that you can connect your device to Robonomics with this [instruction](/docs/add-smart-device-to-robonomics).

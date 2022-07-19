@@ -42,17 +42,17 @@ Además, VirtualBox puede mostrar una advertencia sobre `Display settings`. Cons
 
 Abra VirtualBox y presione `Ctrl+I` o `File > Import Applicance...`
 
-![Imagen VB de importación AIRA](../images/aira-installation/aira_import_vb_image.jpg "Imagen VB de importación AIRA")
+![Imagen VB de importación AIRA](./images/aira-installation/aira_import_vb_image.jpg "Imagen VB de importación AIRA")
 
 En este momento, el siguiente paso no es necesario, pero te ayudará a conectarte a la VM a través de SSH fácilmente.
 
 Primero agregue el adaptador `Host-Only` en el menú de VirtualBox `File > Host Network Manager...` o presionando `Ctrl+H`
 
-![Host Only](../images/aira-installation/host_only_adapter.jpg "Host Only")
+![Host Only](./images/aira-installation/host_only_adapter.jpg "Host Only")
 
 Luego vaya a la configuración de la imagen, Red y agregue el segundo adaptador de red.
 
-![Segundo adaptador](../images/aira-installation/add_second_adapter.jpg "Segundo adaptador")
+![Segundo adaptador](./images/aira-installation/add_second_adapter.jpg "Segundo adaptador")
 
 Para obtener más detalles, consulte [la lección](/docs/aira-connecting-via-ssh/) independiente.
 
@@ -62,7 +62,7 @@ Opcionalmente, puede aumentar la cantidad de memoria de video y cambiar `Graphic
 
 Finalmente presione `Start` y verá AIRA dándole la bienvenida con la dirección Ethereum generada y el identificador IPFS
 
-![Imagen AIRA lista, pantalla de bienvenida](../images/aira-installation/aira_image_ready.jpg "Imagen AIRA lista, pantalla de bienvenida")
+![Imagen AIRA lista, pantalla de bienvenida](./images/aira-installation/aira_image_ready.jpg "Imagen AIRA lista, pantalla de bienvenida")
 
 En la primera inicialización, AIRA genera una nueva dirección Ethereum e identificador IPNS para usted.
 

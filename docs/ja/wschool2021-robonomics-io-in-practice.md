@@ -90,7 +90,7 @@ robonomics io read sds011 | gz | robonomics io write pubsub my-sensor-data
 現在、アドレスの残高はゼロで、ネットワークはこのアドレスからの取引の送信を許可していません。この問題を解決するために、`Alice`アカウントからトークンを送金しましょう。https://parachain.robonomics.network の Robonomics Portal を使って、 `ws://127.0.0.1:9944`というアドレスのローカルノードに接続してみましょう。
 
 
-![portal transfer](../images/ws_lesson3/tran.jpg)
+![portal transfer](./images/ws_lesson3/tran.jpg)
 
 
 そして、任意のデータをブロックチェーンに保存するために、`datalog`デバイスを使用することができます。`-s`keyは、アカウントの秘密シード値を設定するために使用されます。取引を行うためには、口座の残高がゼロでないことが必要です。
@@ -100,7 +100,7 @@ robonomics io read sds011 | gz | robonomics io write pubsub my-sensor-data
 すべてが正しく行われていれば、Robonomicsポータルの`Explorer`ページに`Datalog`イベントが表示されます。
 
 
-![portal datalog](../images/ws_lesson3/datalog.jpg)
+![portal datalog](./images/ws_lesson3/datalog.jpg)
 
 
 最後のステップは少し複雑ですが、このレッスンのすべての知識を使ってみるのもいいでしょう。SDS011センサー（またはファイル）からデータを収集し、それをIPFSに格納し、`datalog`トランザクションを送信してブロックチェーンにハッシュを保存する簡単なプログラムを作ってみましょう。
@@ -123,4 +123,4 @@ vsds011.sh | robonomics io write ipfs | robonomics io write datalog -s <private_
 
 うまくいけば、IPFSのハッシュを含む`Datalog`イベントが提示されるはずです。
 
-![portal datalog complex](../images/ws_lesson3/datalog_complex.jpg)
+![portal datalog complex](./images/ws_lesson3/datalog_complex.jpg)

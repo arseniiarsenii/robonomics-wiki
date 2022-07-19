@@ -22,8 +22,8 @@ What preinstalled in the image:
 ## How To Use The Prepared Image
 Install [Raspberry Pi Imager](https://www.raspberrypi.com/software/) on your computer. Insert SD card into your PC and run the Imager program. In `Operating System` select `Use custom` and choose the previously downloaded `.img.gz` file. Then select your SD card in the `Storage` dropdown and click `WRITE`.
 
-![imager](../images/home-assistant/use_custom_image.png)
-![imager](../images/home-assistant/imager_prep.png)
+![imager](./images/home-assistant/use_custom_image.png)
+![imager](./images/home-assistant/imager_prep.png)
 
 After writing is comleted, open the SD card's files on your computer and navigate inside the root folder of the card. The name should be something similar to `system-boot`.
 

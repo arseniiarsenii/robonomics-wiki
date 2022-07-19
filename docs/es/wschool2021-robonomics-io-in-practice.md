@@ -86,7 +86,7 @@ Save generated address and seed on safe place for use it later.
 
 Currently address balance is zero and the network don't permits to send transactions from this address. To fix it let's transfer a bit of tokens from `Alice` account. I'll use Robonomics Portal on https://parachain.robonomics.network connected to local node with address `ws://127.0.0.1:9944`.
 
-![portal transfer](../images/ws_lesson3/tran.jpg)
+![portal transfer](./images/ws_lesson3/tran.jpg)
 
 And then `datalog` device could be used for saving any data on blockchain. The key `-s` is used to set secret seed of account. Account should have non-zero balance to send transactions.
 
@@ -94,7 +94,7 @@ And then `datalog` device could be used for saving any data on blockchain. The k
 
 If every thing is correct the you should see `Datalog` event on `Explorer` page of Robonomics portal.
 
-![portal datalog](../images/ws_lesson3/datalog.jpg)
+![portal datalog](./images/ws_lesson3/datalog.jpg)
 
 The final step is a bit complex but it's good to try use all knowledge of this lesson. Let's make a simple program
 that collects data from SDS011 sensor (or file), pack it into IPFS and then send `datalog` transaction to save hash on blockchain.
@@ -114,6 +114,6 @@ vsds011.sh | robonomics io write ipfs | robonomics io write datalog -s <private_
 
 If everything well the `Datalog` event with IPFS hash should be presented.
 
-![portal datalog complex](../images/ws_lesson3/datalog_complex.jpg)
+![portal datalog complex](./images/ws_lesson3/datalog_complex.jpg)
 
 > Contributor [@Akru](https://github.com/akru)

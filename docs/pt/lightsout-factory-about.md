@@ -5,7 +5,7 @@ contributors: [ValanisZz, GiggleSeagull, Valiento]
 translated: true
 ---
 
-![Lightsout Factory Preview](../images/lightsout-factory/factory_preview_numbers.jpg)
+![Lightsout Factory Preview](./images/lightsout-factory/factory_preview_numbers.jpg)
 
 ## Project goal
 Provide optimized and fully automated factory manufacturing depending on the specified requirements

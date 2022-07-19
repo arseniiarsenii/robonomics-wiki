@@ -99,7 +99,7 @@ Ahora conectemos un sensor real, enviemos el puerto USB a la máquina virtual, c
 
 Primero, detenga el AIRA OS si se estaba ejecutando y agregue un dispositivo USB correspondiente.
 
-![VB USB Forwarding](../images/vb_forward_usb.jpg)
+![VB USB Forwarding](./images/vb_forward_usb.jpg)
 
 Inicie la VM, conéctese a través de SSH y configure la opción de `comstation/port` de acuerdo con su dispositivo USB en la VM. También habilite la `comstation` y configure su latitud y longitud. Al final, `config/my.json` debería verse así:
 

@@ -13,7 +13,7 @@ Find more in [Robonomics whitepaper](https://github.com/airalab/robonomics_specs
 
 The following chart describes what place Robonomics takes in the scenario:
 
-![Robonomics Chart](../images/robonomics_network_basic_scheme.jpg "Robonomics Network scenario")
+![Robonomics Chart](./images/robonomics_network_basic_scheme.jpg "Robonomics Network scenario")
 
 ## What the documentation contains
 

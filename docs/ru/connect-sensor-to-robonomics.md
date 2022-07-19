@@ -9,7 +9,7 @@ translated: true
 
 Универсальная плата датчика качества воздуха, основанная на ESP8266. Устройство рассчитано на питание 6 - 20 вольта.
 
-![plata](../images/sensors-connectivity/plata.png)
+![plata](./images/sensors-connectivity/plata.png)
 
 Данная плата позволяет подключить датчики PM:
 
@@ -39,7 +39,7 @@ translated: true
 
 Рассмотрим плату подробнее:
 У платы есть несколько разъемов подключения - они выделены синим и зеленым цветом. Рассмотрим синий блок клеммных колодок.
-![plata1](../images/sensors-connectivity/plata1.png)
+![plata1](./images/sensors-connectivity/plata1.png)
 
 Слева направо(все клеммы подписаны):
 - Клемма для подключения питания платы. Рекомендуемое напряжение 12 вольт. 
@@ -91,7 +91,7 @@ chmod +x airrohr-flasher-linux
 
 Выберите прошивку (на английском или на русском) и нажмите `Upload`. Загрузка прошивки займет некоторое время.
 
-![flasher](../images/sensors-connectivity/7_flasher.jpg)
+![flasher](./images/sensors-connectivity/7_flasher.jpg)
 
 ## Настройка
 
@@ -99,30 +99,30 @@ chmod +x airrohr-flasher-linux
 
 Через некоторое время после перезагрузки ESP создаст Wi-Fi сеть с названием RobonomicsSensor-xxxxxxx. Подключитесь к ней с телефона или с компьютера, далее откроется окно авторизации (если оно не открылось в любом браузере перейдите по адресу 192.168.4.1). Выберете в списке вашу Wi-Fi сеть (или напишите сами, если ее нет в списке) и заполните поле с паролем. Также напишите координаты места, где будет установлен датчик, в поле ниже:
 
-![guest](../images/sensors-connectivity/guest_ru.jpg)
+![guest](./images/sensors-connectivity/guest_ru.jpg)
 
 Нажмите `Сохранить и перезапустить`.
 
 Плата подключится к указанной Wi-Fi сети и через пару минут вы сможете увидеть данные на [карте](https://sensors.robonomics.network/#/):
 
-![map](../images/sensors-connectivity/14_map.jpg)
+![map](./images/sensors-connectivity/14_map.jpg)
 
 ## Дополнительная настройка
 
 Для более детальной настройки (она может понадобиться для подключения дополнительных датчиков или отправки данных на собственный сервер) вам нужно найти адрес датчика в вашей Wi-Fi сети. Для этого можно использовать `airrohr-flasher` (ваш компьютер должен находиться в той же сети, к которой подключен датчик). Запустите его и перейдите во вкладку `Discovery`, далее нажмите `Refresh`, подождите немного и появится адрес вашего датчика.
 
-![addr](../images/sensors-connectivity/11_flaser2.jpg)
+![addr](./images/sensors-connectivity/11_flaser2.jpg)
 
 Перейдите по этому адресу двойным кликом (или введите его в браузере), вы попадете в меню датчика:
 
-![home](../images/sensors-connectivity/home_ru.png)
+![home](./images/sensors-connectivity/home_ru.png)
 
 Во вкладке `Конфигурация` можно настроить используемые датчики:
 
-![sensors](../images/sensors-connectivity/sensors_ru.png)
+![sensors](./images/sensors-connectivity/sensors_ru.png)
 
 А также настроить отправку на собственный сервер. Для этого во вкладке `APIs` нужно убрать отметку с `Robonomics` и отметить `Отправить в свой API` и указать адрес сервера и порт (65 для sensors connectivity):
 
-![apis](../images/sensors-connectivity/apis_ru.png)
+![apis](./images/sensors-connectivity/apis_ru.png)
 
 Для сохранения настроек нажмите `Сохранить и перезапустить`.

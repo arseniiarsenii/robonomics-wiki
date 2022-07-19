@@ -9,7 +9,7 @@ translated: true
 
 Universal board for air quality sensor, based on ESP8266 allows to use the following modules: NODEMCU v3, NODEMCU v2, WEMOS D1 MINI. The device is designed for 6 - 24 volt power supply, using DC-DC converter DC MINI560.
 
-![plata](../images/sensors-connectivity/plata.png)
+![plata](./images/sensors-connectivity/plata.png)
 
 This board allows you to connect PM sensors:
 
@@ -72,7 +72,7 @@ Download the flasher and run it. You will also need to install the drivers for U
 
 Select the firmware (in English or Russian) and click `Upload`. Uploading the firmware will take some time.
 
-![flasher](../images/sensors-connectivity/7_flasher.jpg)
+![flasher](./images/sensors-connectivity/7_flasher.jpg)
 
 ## Setup
 
@@ -80,31 +80,31 @@ After downloading the firmware, reboot the ESP (just disconnect and reconnect th
 
 After a while after the reboot, ESP will create a Wi-Fi network called RobonomicsSensor-xxxxxxxxx. Connect to it from your phone or computer, then an authorization window will open (if it doesn't open in any browser go to 192.168.4.1). Select your Wi-Fi network from the list (or write it yourself if it's not on the list) and fill in the password field. Also write the coordinates of the place where the sensor will be installed in the field below:
 
-![guest](../images/sensors-connectivity/guest.jpg)
+![guest](./images/sensors-connectivity/guest.jpg)
 
 Click `Save and restart`.
 
 The board will connect to the specified Wi-Fi network and in a couple of minutes you will be able to see the data on [map](https://sensors.robonomics.network/#/):
 
-![map](../images/sensors-connectivity/14_map.jpg)
+![map](./images/sensors-connectivity/14_map.jpg)
 
 ## Advanced Setup
 
 For a more detailed setup (you may need it to connect additional sensors or send data to your own server) you need to find the address of the sensor in your Wi-Fi network. To do this, you can use `airrohr-flasher` (your computer must be on the same network as the sensor is connected to). Start it and go to the `Discovery` tab, then press `Refresh`, wait a moment and your sensor address will appear.
 
-![addr](../images/sensors-connectivity/11_flaser2.jpg)
+![addr](./images/sensors-connectivity/11_flaser2.jpg)
 
 Double-click on this address (or type it into your browser), you will get to the sensor menu:
 
-![home](../images/sensors-connectivity/home.png)
+![home](./images/sensors-connectivity/home.png)
 
 Under the `Configuration` tab you can configure the sensors used:
 
-![sensors](../images/sensors-connectivity/sensors.png)
+![sensors](./images/sensors-connectivity/sensors.png)
 
 And also set up sending to your own server. To do this, in the tab `APIs` uncheck `Robonomics` and check `Send to own API` and specify the server address and port (65 for sensors connectivity):
 
-![apis](../images/sensors-connectivity/apis_en.png)
+![apis](./images/sensors-connectivity/apis_en.png)
 
 Click `Save and restart` to save the settings.
 

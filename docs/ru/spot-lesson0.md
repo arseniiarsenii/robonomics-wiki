@@ -97,7 +97,7 @@ sudo yggdrasil -useconffile /etc/yggdrasil.conf
 
 Press win + r and type `services.msc`, find Yggdrasil service, open it and restart (press Stop and Start).
 
-![win-service](../images/spot/spot-windows.jpg)
+![win-service](./images/spot/spot-windows.jpg)
 
 ## 6. Check Connection
 

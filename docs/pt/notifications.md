@@ -7,27 +7,27 @@ translated: true
 
 You can receive notifications on your smartphone with [notify](https://notify.events/). Girstly register there and on `Control Panel` creae new channel:
 
-![control_panel](../images/home-assistant/not_control_panel.png)
+![control_panel](./images/home-assistant/not_control_panel.png)
 
 Add title and press `Save`:
 
-![channel](../images/home-assistant/not_create_chanell.png)
+![channel](./images/home-assistant/not_create_chanell.png)
 
 Then press `Add Source` and choose `Home Assistant` in `IoT and Smart Home` tab:
 
-![source](../images/home-assistant/not_add_source.png)
+![source](./images/home-assistant/not_add_source.png)
 
 Write title and press `Next`:
 
-![source_next](../images/home-assistant/not_add_source_next.png)
+![source_next](./images/home-assistant/not_add_source_next.png)
 
 There you will see the token which you need to add to your configuration file for home Assistant. Save it somewhere and press `Done`:
 
-![token](../images/home-assistant/not_token.png)
+![token](./images/home-assistant/not_token.png)
 
 then press `Subscribe` to add subscribers:
 
-![subscribe](../images/home-assistant/not_subscribe.png)
+![subscribe](./images/home-assistant/not_subscribe.png)
 
 Choose whatever subscriber you want and follow the instructions.
 

@@ -110,7 +110,7 @@ roslaunch kuka_moveit_config demo.launch
 ```
 You should see the following:
 
-![KUKA in RViz](../images/kuka-real/kuka_rviz.png "KUKA in RViz")
+![KUKA in RViz](./images/kuka-real/kuka_rviz.png "KUKA in RViz")
 
 Try moving the end effector and clicking 'Plan and Execute'. The robot should move. On SmartPad go to **Display -> Actual position** and observe end effector's coordinate. Place a canvas horizontally to the robot base. Plug a brush into the brush holder and carefully move it till it barely touches the canvas. At this position, save end effector's coordinates. Repeat 12-15 times. Also, save the coordinates of the canvas center and paint tin.
 When you have a set of coordinates, use [these](https://github.com/nakata5321/Matlab_scripts_gaka-chu) Matlab scripts to resolve the missing constants and quaternion. Paste them. Rebuild your workspace with
@@ -130,7 +130,7 @@ rosrun local_task_planner draw_workspace
 ```
 After this, you should see a canvas contour in RViz:
 
-![KUKA in RViz canvas](../images/kuka-real/kuka_rviz_canvas.png "KUKA in RViz canvas")
+![KUKA in RViz canvas](./images/kuka-real/kuka_rviz_canvas.png "KUKA in RViz canvas")
 
 In terminal press "S" to perform testing. Robot's end effector should move right above the borders of the canvas and the brush should gently touch the canvas during the entire movement. If not so, try recalibrating. If the canvas model is rotated wrong, you can rotate it by changing quaternion in Matlab.
 

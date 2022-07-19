@@ -43,26 +43,26 @@ ssh -f -N -L 9989:127.0.0.1:9989 root@REMOTE_SERVER_IP
 ```
 After that, you can use `ws://127.0.0.1:9944` for relaychain, `ws://127.0.0.1:9988`and `ws://127.0.0.1:9989` for parachains in https://parachain.robonomics.network/
 
-![relay](../images/ws_lesson4/upcoming.jpg)
+![relay](./images/ws_lesson4/upcoming.jpg)
 
 Some time ago parachains should be registered.
 
-![relay2](../images/ws_lesson4/parachains.jpg)
+![relay2](./images/ws_lesson4/parachains.jpg)
 
 And start to produce blocks.
 
-![relay3](../images/ws_lesson4/parachains2.jpg)
+![relay3](./images/ws_lesson4/parachains2.jpg)
 
 As next step let's create HRMP channel to pass messages between parachains. I'll use `sudo` module call on relay chain page.
 
-![hrmp](../images/ws_lesson4/hrmp.jpg)
+![hrmp](./images/ws_lesson4/hrmp.jpg)
 
 When channel created, the XCM calls is available. Let's use `datalogXcm` pallet - a XCM version of `datalog` pallet in first parachain.
 
-![datalogXcmSend](../images/ws_lesson4/datalogXcmSend.jpg)
+![datalogXcmSend](./images/ws_lesson4/datalogXcmSend.jpg)
 
 As result message on second parachain will call `datalog` pallet and write data on chain.
 
-![datalogXcmRecv](../images/ws_lesson4/datalogXcmRecv.jpg)
+![datalogXcmRecv](./images/ws_lesson4/datalogXcmRecv.jpg)
 
 As result, this example demonstrate how XCM could be used for cross chain usage of standard robonomics pallets.

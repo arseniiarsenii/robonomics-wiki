@@ -102,7 +102,7 @@ Now let's connect a real sensor, forward USB port to the virtual machine, set up
 
 First, stop the Aira OS if it was running and add a corresponding USB device
 
-![VB USB Forwarding](../images/vb_forward_usb.jpg)
+![VB USB Forwarding](./images/vb_forward_usb.jpg)
 
 Start the VM, connect via SSH and set `comstation/port` option according to your USB device in the VM. Also enable `comstation` and set your latitude and longitude. In the end `config/my.json` should look like this:
 

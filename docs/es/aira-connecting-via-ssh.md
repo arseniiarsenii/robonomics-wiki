@@ -17,7 +17,7 @@ https://www.youtube.com/embed/R6waDG5iwm0
 
 Vaya a `File` -> `Host Network Manager...` o presione `Ctrl+H`
 
-![Administrador de red de VirtualBox](../images/virtualbox_network_manager.png "Administrador de red de VirtualBox")
+![Administrador de red de VirtualBox](./images/virtualbox_network_manager.png "Administrador de red de VirtualBox")
 
 Click en boton `Create`.
 
@@ -25,7 +25,7 @@ Click en boton `Create`.
 
 Seleccione la VM importada y haga clic en `Settings`. Vaya a la pestaña `Network` y habilite el segundo adaptador.
 
-![Añadir el segundo adaptador](../images/add_second_adapter_to_vm.png "Añadir el segundo adaptador")
+![Añadir el segundo adaptador](./images/add_second_adapter_to_vm.png "Añadir el segundo adaptador")
 
 ## Keys Autorizadas Pobladas
 

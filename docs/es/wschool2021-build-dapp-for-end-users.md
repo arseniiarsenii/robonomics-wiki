@@ -35,7 +35,7 @@ Para almacenar claves en un navegador, existe `polkadot{.js} extension`. En dApp
 La extensión está disponible actualmente para `Google Chrome` y `Firefox` [https://polkadot.js.org/extension/](https://polkadot.js.org/extension/)
 
 Después de instalar la extensión, cree una nueva cuenta.
-![screen1](../images/build-iot-dapps/screen1.png)
+![screen1](./images/build-iot-dapps/screen1.png)
 
 > El primer paso esta completado.
 
@@ -449,7 +449,7 @@ yarn serve
 
 Como resultado, obtendremos la siguiente imagen en el navegador
 
-![screen2](../images/build-iot-dapps/screen2.png)
+![screen2](./images/build-iot-dapps/screen2.png)
 
 ### Paso 4. Datalog
 
@@ -633,7 +633,7 @@ yarn serve
 
 Como resultado, obtendremos la siguiente imagen en el navegador:
 
-![screen3](../images/build-iot-dapps/screen3.png)
+![screen3](./images/build-iot-dapps/screen3.png)
 
 ### Step 5. Lanzamiento
 
@@ -808,7 +808,7 @@ yarn serve
 
 Como resultado, obtendremos la siguiente imagen en el navegador
 
-![screen4](../images/build-iot-dapps/screen4.png)
+![screen4](./images/build-iot-dapps/screen4.png)
 
 ### Paso 6. Demo
 
@@ -901,7 +901,7 @@ Para la visualización, crearemos un componente `Demo.vue`, donde tendremos un b
   font-style: 14px;
   animation: move 30s linear infinite;
   border-radius: 0 10px 10px 0;
-  background: url("../images/build-iot-dapps/car.png") no-repeat 0 0;
+  background: url("./images/build-iot-dapps/car.png") no-repeat 0 0;
   background-size: cover;
 }
 .robot-play {
@@ -1051,7 +1051,7 @@ yarn serve
 
 Como resultado, obtendremos la siguiente imagen en el navegador
 
-![screen5](../images/build-iot-dapps/screen5.png)
+![screen5](./images/build-iot-dapps/screen5.png)
 
 Con esto concluye nuestra lección.
 

@@ -8,7 +8,7 @@ import Asciinema from '~/components/Asciinema.vue'
 
 At the moment, Robonomics, in addition to the Ethereum network, also operates on the basis of the Polkadot ecosystem, which has greater scalability through the use of sharded blockchains. To do this, the ecosystem uses a [sharded model](https://wiki.polkadot.network/docs/getting-started), with the following elements:
 
-![Polkadot base scheme](../images/ws_lesson4/polkadot-base-scheme.png "Polkadot base scheme (from Polkadot Wiki)")
+![Polkadot base scheme](./images/ws_lesson4/polkadot-base-scheme.png "Polkadot base scheme (from Polkadot Wiki)")
 
 * relay chain — central blockchain used by others for basic coordination of work;
 * parachains — data structures (usually also blockchains) used for specific applications; Robonomics operates as a parachain;
@@ -61,19 +61,19 @@ ssh -f -N -L 9989:127.0.0.1:9989 root@REMOTE_SERVER_IP
 ```
 After that, you can use `ws://127.0.0.1:9944` for relay chain, `ws://127.0.0.1:9988`and `ws://127.0.0.1:9989` for parachains in https://polkadot.js.org/apps/?rpc=ws%3A%2F%2F127.0.0.1%3A9944#/explorer
 
-<!-- ![relay](../images/ws_lesson4/upcoming.jpg)
+<!-- ![relay](./images/ws_lesson4/upcoming.jpg)
 
 Some time ago parachains should be registered.
 
-![relay2](../images/ws_lesson4/parachains.jpg)
+![relay2](./images/ws_lesson4/parachains.jpg)
 
 And start to produce blocks.
 
-![relay3](../images/ws_lesson4/parachains2.jpg) -->
+![relay3](./images/ws_lesson4/parachains2.jpg) -->
 
 As the next step, let's create an HRMP channel to pass messages between parachains. We would use `sudo` module to call on relay chain page. To do this, Open Rocco relay chain(https://polkadot.js.org/apps/?rpc=ws%3A%2F%2F127.0.0.1%3A9944#/explorer) and switch to local node from the top left. Then, go to `Developer->Sudo`, fill in parts as shown in figure below and click on `Submit Sudo`.
 
-![hrmp](../images/ws_lesson4/hrmp.jpg)
+![hrmp](./images/ws_lesson4/hrmp.jpg)
 
 When the channel is created, the XCM calls would become available. Let's use `datalogXcm` pallet - a XCM version of `datalog` pallet in first parachain (9988).
 
@@ -89,7 +89,7 @@ In the next step, switch to the first parachain(https://polkadot.js.org/apps/?rp
 
 After saving the configurations, find `Extrinsics` under the `Developer` tab. Fill in the parts as shown in figure below and click on `Submit Transaction`. Wait for transaction to be finalized.
 
-![datalogXcmSend](../images/ws_lesson4/datalogXcmSend.jpg)
+![datalogXcmSend](./images/ws_lesson4/datalogXcmSend.jpg)
 
 As a result of the above operation, the message on second parachain will call `datalog` pallet and write data onto the chain.
 
@@ -97,6 +97,6 @@ To view the message, go to the other parachain (https://polkadot.js.org/apps/?rp
 
 You should be able to see that your message has been sent from the first parachain (9998) to the second one (9999). The message will appear in the `Explorer` tab under `recent events`.
 
-![datalogXcmRecv](../images/ws_lesson4/datalogXcmRecv.jpg)
+![datalogXcmRecv](./images/ws_lesson4/datalogXcmRecv.jpg)
 
 This example demonstrated that how XCM could be used for cross chain usage of standard Robonomics pallets.

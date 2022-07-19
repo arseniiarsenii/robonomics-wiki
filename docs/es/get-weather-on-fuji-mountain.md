@@ -17,24 +17,24 @@ https://www.youtube.com/embed/t098NlMELk4
 
 En caso de que no tenga la extensión MetaMask, verá la imagen a continuación. Vaya al enlace proporcionado arriba e instale uno.
 
-!["Robonomics dApp si no hay MetaMask instalado"](../images/sensor-demo/sensor-demo-1.png "Robonomics dApp si no hay MetaMask instalado")
+!["Robonomics dApp si no hay MetaMask instalado"](./images/sensor-demo/sensor-demo-1.png "Robonomics dApp si no hay MetaMask instalado")
 
 ## 2. Permitir la conexión a la Extension
-!["Conexión a Robonomics dApp a través de Metamask"](../images/sensor-demo/sensor-demo-2.png "Conexión a Robonomics dApp a través de Metamask")
+!["Conexión a Robonomics dApp a través de Metamask"](./images/sensor-demo/sensor-demo-2.png "Conexión a Robonomics dApp a través de Metamask")
 
 ## 3. Presione “Request Current Values” (Solicitar Valores Actuales)
-!["Request sensor's data in Robonomics network via dApp"](../images/sensor-demo/sensor-demo-3.png "Request sensor's data in Robonomics network via dApp")
+!["Request sensor's data in Robonomics network via dApp"](./images/sensor-demo/sensor-demo-3.png "Request sensor's data in Robonomics network via dApp")
 
 ## 4. Firme el Mensaje, no se necesita ningun token ni Ether
-!["Firme el Mensaje en la red de Robonomics a través de dApp"](../images/sensor-demo/sensor-demo-4.png "Firme el Mensaje en la red de Robonomics a través de dApp")
+!["Firme el Mensaje en la red de Robonomics a través de dApp"](./images/sensor-demo/sensor-demo-4.png "Firme el Mensaje en la red de Robonomics a través de dApp")
 
 ## 5. Espere hasta que el agente agarre los datos y los envie
-!["Espere hasta que el agente en la red Robonomics a través de dApp"](../images/sensor-demo/sensor-demo-5.png "Espere hasta que el agente en la red Robonomics a través de dApp")
+!["Espere hasta que el agente en la red Robonomics a través de dApp"](./images/sensor-demo/sensor-demo-5.png "Espere hasta que el agente en la red Robonomics a través de dApp")
 
 ## 6. Espere hasta que la DAPP descargue el archivo final de IPFS
-!["Espere el archivo IPFS con resultados en la red Robonomics a través de dApp"](../images/sensor-demo/sensor-demo-6.png "Espere el archivo IPFS con resultados en la red Robonomics a través de dApp")
+!["Espere el archivo IPFS con resultados en la red Robonomics a través de dApp"](./images/sensor-demo/sensor-demo-6.png "Espere el archivo IPFS con resultados en la red Robonomics a través de dApp")
 
 ## 7. Ahora si, ya puede ver los datos del tiempo en la Montaña Fuji
-!["Los resultados de la red de sensores en Robonomics a través de dApp"](../images/sensor-demo/sensor-demo-7.png "Los resultados de la red de sensores en Robonomics a través de dApp")
+!["Los resultados de la red de sensores en Robonomics a través de dApp"](./images/sensor-demo/sensor-demo-7.png "Los resultados de la red de sensores en Robonomics a través de dApp")
 
 ¡Acaba de transmitir un mensaje de demanda y obtuvo un resultado de un agente autónomo! El archivo de resultados se almacena en IPFS, el mensaje de resultado se firma con la clave privada del agente.

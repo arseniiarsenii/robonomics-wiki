@@ -151,7 +151,7 @@ Secret phrase `rebel federal super deer dinosaur sick pledge hint truth wool inp
 
 Initially, balance of the account at the generated address is zero, thus the network does not allow sending transactions from this address. To fix this, you need to transfer some tokens from an account like `Alice` to the account at the generated address. Use [Robonomics Parachain portal](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkusama.rpc.robonomics.network%2F#/) for making the transfer.
 
-![portal transfer](../images/ws_lesson3/transfer_funds.jpg)
+![portal transfer](./images/ws_lesson3/transfer_funds.jpg)
 
 After token addition is done, `datalog` device could be used for saving any data on blockchain. The argument `-s` is used to set secret seed of account. Remember, the account should have non-zero balance to send transactions.
 
@@ -159,7 +159,7 @@ After token addition is done, `datalog` device could be used for saving any data
 
 If you everything is set correctly,  you should see `datalog` event on `Explorer` page of Robonomics portal.
 
-![portal datalog](../images/ws_lesson3/datalog_image.jpg)
+![portal datalog](./images/ws_lesson3/datalog_image.jpg)
 
 
 ## Read Data From Sensor and Save In Blockchain
@@ -186,5 +186,5 @@ robonomics io read sds011 | robonomics io write ipfs | robonomics io write datal
 
 If everything goes well, the `datalog` event with IPFS hash should be presented in the ***recent events*** section. 
 
-![portal datalog complex](../images/ws_lesson3/datalog_combined.jpg)
+![portal datalog complex](./images/ws_lesson3/datalog_combined.jpg)
 

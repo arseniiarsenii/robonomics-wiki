@@ -56,9 +56,9 @@ You can find all information about existing *digital twins in* ***Developer -> C
 
 [ln1]: <https://github.com/airalab/robonomics/releases>
 [ln2]: </docs/create-account-in-dapp>
-[im1]: <../images/digital-twin/twin-create.jpg>
-[im2]: <../images/digital-twin/create-log.jpg>
-[im3]: <../images/digital-twin/fields.jpg>
-[im4]: <../images/digital-twin/topic.jpg>
-[im5]: <../images/digital-twin/topics.jpg>
-[im6]: <../images/digital-twin/chain-state.jpg>
+[im1]: <./images/digital-twin/twin-create.jpg>
+[im2]: <./images/digital-twin/create-log.jpg>
+[im3]: <./images/digital-twin/fields.jpg>
+[im4]: <./images/digital-twin/topic.jpg>
+[im5]: <./images/digital-twin/topics.jpg>
+[im6]: <./images/digital-twin/chain-state.jpg>

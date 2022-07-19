@@ -35,7 +35,7 @@ chmod +x robonomics
 확장 `구글 크롬`과 `Firefox` 현재로 볼 수 있습니다 : https://polkadot.js.org/extension/
 
 확장 프로그램을 설치 한 후 새 계정을 만듭니다.
-![screen1](../images/build-iot-dapps/screen1.png)
+![screen1](./images/build-iot-dapps/screen1.png)
 
 > 첫 번째 단계가 완료되었습니다.
 
@@ -449,7 +449,7 @@ yarn serve
 
 결과적으로 브라우저에이 사진이 표시됩니다
 
-![screen2](../images/build-iot-dapps/screen2.png)
+![screen2](./images/build-iot-dapps/screen2.png)
 
 ### 4 단계. 데이터로그
 
@@ -633,7 +633,7 @@ yarn serve
 
 결과적으로 브라우저에이 사진이 표시됩니다
 
-![screen3](../images/build-iot-dapps/screen3.png)
+![screen3](./images/build-iot-dapps/screen3.png)
 
 ### 5 단계. 시작
 
@@ -808,7 +808,7 @@ yarn serve
 
 결과적으로 브라우저에이 사진이 표시됩니다
 
-![screen4](../images/build-iot-dapps/screen4.png)
+![screen4](./images/build-iot-dapps/screen4.png)
 
 ### 6 단계. 데모
 
@@ -901,7 +901,7 @@ yarn serve
   font-style: 14px;
   animation: move 30s linear infinite;
   border-radius: 0 10px 10px 0;
-  background: url("../images/build-iot-dapps/car.png") no-repeat 0 0;
+  background: url("./images/build-iot-dapps/car.png") no-repeat 0 0;
   background-size: cover;
 }
 .robot-play {
@@ -1051,7 +1051,7 @@ yarn serve
 
 결과적으로 브라우저에이 사진이 표시됩니다
 
-![screen5](../images/build-iot-dapps/screen5.png)
+![screen5](./images/build-iot-dapps/screen5.png)
 
 이것으로 강의를 마칩니다.
 

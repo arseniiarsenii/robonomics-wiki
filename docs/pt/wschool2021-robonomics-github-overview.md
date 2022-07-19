@@ -28,13 +28,13 @@ Towards learning how to leverage AIRA, in this lesson, you would install AIRA, s
 
 Open VirtualBox and press `Ctrl+I` or go to `File > Import Applicance...` and choose the previously downloaded image to be imported.
 
-![AIRA import VB image](../images/aira-installation/aira_import_vb_image.jpg "AIRA import VB image")
+![AIRA import VB image](./images/aira-installation/aira_import_vb_image.jpg "AIRA import VB image")
 
 ## **Launch the machine**
 
 Once the importing is over, press on Start button and you'll see AIRA welcoming you with generated Ethereum address and IPFS identifier
 
-![AIRA image ready, Welcome screen](../images/aira-installation/aira_image_ready.jpg "AIRA image ready, Welcome screen")
+![AIRA image ready, Welcome screen](./images/aira-installation/aira_image_ready.jpg "AIRA image ready, Welcome screen")
 
 > In case of any problems, a detailed walk-through video of this section can be [here](https://youtu.be/ISKilRfY3Ow).
 
@@ -54,7 +54,7 @@ Click on `Create` button. You should see a new adapter created such as `vboxnet#
 
 Select imported VM and click `Settings`. Go to `Network` tab and enable the adapter you just created. (e.g. in the figure below the new adapter name is  `vboxnet1`)
 
-![Add Second Adapter](../images/add_second_adapter_to_vm.png "Add Second Adapter")
+![Add Second Adapter](./images/add_second_adapter_to_vm.png "Add Second Adapter")
 
 ### **Populate Authorized Keys**
 
@@ -103,7 +103,7 @@ rosrun hello_aira hello_aira
 
 Upon running the last command, you should see a link to DApp generated specifically for your instance.
 
-![Terminal with AIRA](../images/aira_hello_terminal.jpg "Terminal with AIRA")
+![Terminal with AIRA](./images/aira_hello_terminal.jpg "Terminal with AIRA")
 
 Click on the link, the DApp should be shown.
 
@@ -111,19 +111,19 @@ Click on the link, the DApp should be shown.
 
 Connect [MetaMask](http://metamask.io/) if prompted and click on the button
 
-![Request connection in Robonomics Dapp](../images/aira_hello_dapp.jpg "Request connection in Robonomics Dapp")
+![Request connection in Robonomics Dapp](./images/aira_hello_dapp.jpg "Request connection in Robonomics Dapp")
 
 Sign the message and wait for the result
 
-![Wait for Result of request](../images/aira_hello_dapp_2.jpg "Wait for Result of request")
+![Wait for Result of request](./images/aira_hello_dapp_2.jpg "Wait for Result of request")
 
 Meanwhile have a look at the terminal. You should see the greeting
 
-![AIRA greeting in terminal](../images/aira_hello_terminal_2.jpg "AIRA greeting in terminal")
+![AIRA greeting in terminal](./images/aira_hello_terminal_2.jpg "AIRA greeting in terminal")
 
 At the end, the greeting will appear in the DApp
 
-![Robonomics DApp Greeting for AIRA](../images/aira_hello_dapp_3.jpg "Robonomics DApp Greeting for AIRA")
+![Robonomics DApp Greeting for AIRA](./images/aira_hello_dapp_3.jpg "Robonomics DApp Greeting for AIRA")
 
 ### **Troubleshooting**
 

@@ -198,22 +198,22 @@ http://<raspberry_address>:8123
 ```
 Press on three dots on the right side and choose `Edit Dashboard`
 
-![edit_dashboard](../images/home-assistant/dashboard.png)
+![edit_dashboard](./images/home-assistant/dashboard.png)
 
 Then press `Add Card`
 
-![card](../images/home-assistant/card.png)
+![card](./images/home-assistant/card.png)
 
 Go to `By Entity` and tick all sensors that you need
 
-![sensors](../images/home-assistant/sensors.png)
+![sensors](./images/home-assistant/sensors.png)
 
 Press continue and you will be able to see sensor data at the homepage (you may see `unknown` before sensor send new data)
 
 In a similar way you can add card for Robonomics Service. With this you can start or stop the servise or send current measurements with `run action` button.
 
-![action](../images/home-assistant/datalog.png)
+![action](./images/home-assistant/datalog.png)
 
 You homepage will look like this
 
-![home](../images/home-assistant/home.png)
+![home](./images/home-assistant/home.png)

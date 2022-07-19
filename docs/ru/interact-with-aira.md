@@ -34,7 +34,7 @@ rosrun hello_aira hello_aira
 
 Run one by one commands above. After the last one you should see a link to DApp generated specifically for your instance.
 
-![Terminal with AIRA](../images/aira_hello_terminal.jpg "Terminal with AIRA")
+![Terminal with AIRA](./images/aira_hello_terminal.jpg "Terminal with AIRA")
 
 Click on the link, the DApp should be shown.
 
@@ -42,19 +42,19 @@ Click on the link, the DApp should be shown.
 
 Connect [MetaMask](http://metamask.io/) if prompted and click on the button
 
-![Request connection in Robonomics Dapp](../images/aira_hello_dapp.jpg "Request connection in Robonomics Dapp")
+![Request connection in Robonomics Dapp](./images/aira_hello_dapp.jpg "Request connection in Robonomics Dapp")
 
 Sign the message as usual and wait for the result
 
-![Wait for Result of request](../images/aira_hello_dapp_2.jpg "Wait for Result of request")
+![Wait for Result of request](./images/aira_hello_dapp_2.jpg "Wait for Result of request")
 
 Meanwhile have a look at the terminal. You should see the greeting
 
-![AIRA greeting in terminal](../images/aira_hello_terminal_2.jpg "AIRA greeting in terminal")
+![AIRA greeting in terminal](./images/aira_hello_terminal_2.jpg "AIRA greeting in terminal")
 
 In the end the greeting will appear in the DApp
 
-![Robonomics DApp Greeting for AIRA](../images/aira_hello_dapp_3.jpg "Robonomics DApp Greeting for AIRA")
+![Robonomics DApp Greeting for AIRA](./images/aira_hello_dapp_3.jpg "Robonomics DApp Greeting for AIRA")
 
 ## Troubleshooting
 

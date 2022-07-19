@@ -21,7 +21,7 @@ Install [WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
 
 Install Ubuntu via Windows Store:
 
-![Windows Store](../images/windows_store.jpg "Windows Store")
+![Windows Store](./images/windows_store.jpg "Windows Store")
 
 and clone the [package](https://github.com/airalab/sensors-connectivity)
 

@@ -9,9 +9,9 @@ translated: true
 
 Перейдите в `Developer/Extrinsics`, выберите Ваш аккаунт (`MAIN` на картинке) и `rws -> call`. Затем в поле `subscriptionID` впишите адрес владельца подписки (`SUBSCRIPTION OWNER` на картинке) и в следующем поле выберите `launch -> launch`. В поле `robot` впишите адрес, куда Вы хотите отправить транзакцию `launch` (`LIGHTBULB (EXTENTION)` на картинке) и выберите параметр `Yes` или `No`. Чтобы совершить транзакцию:
 
-![launch](../images/dev-node/launch.png)
+![launch](./images/dev-node/launch.png)
 
 
 Перейдите в `Network/Explorer`. В `Recent Events` вы увидите два события - `rws.NewCall` и `launch.NewLaunch`:
 
-![события](../images/dev-node/events.png)
+![события](./images/dev-node/events.png)

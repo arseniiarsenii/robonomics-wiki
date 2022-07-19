@@ -5,8 +5,8 @@ contributors: [KiichiSugihara]
 translated: true
 ---
 
-<!-- ![Building User Interface for Decentralized Applications, on top of Robonomics and Polkadot](../images/build-dapp-interface/sum.gif "Building User Interface for Decentralized Applications, on top of Robonomics and Polkadot") -->
-<img alt="Building User Interface for Decentralized Applications, on top of Robonomics and Polkadot" src="../images/build-dapp-interface/sum.gif" />
+<!-- ![Building User Interface for Decentralized Applications, on top of Robonomics and Polkadot](./images/build-dapp-interface/sum.gif "Building User Interface for Decentralized Applications, on top of Robonomics and Polkadot") -->
+<img alt="Building User Interface for Decentralized Applications, on top of Robonomics and Polkadot" src="./images/build-dapp-interface/sum.gif" />
 
 ## はじめに
 
@@ -45,7 +45,7 @@ yarn serve
 
 **ブラウザにこのような画面が表示されるはずです。:**
 
-![Dapp Start](../images/build-dapp-interface/dapp-start.png "Dapp Start")
+![Dapp Start](./images/build-dapp-interface/dapp-start.png "Dapp Start")
 
 
 <details>
@@ -53,11 +53,11 @@ yarn serve
   <summary>起動のためのいくつかの追加のヒント</summary>
 
   - **ノードが起動している**ことを確認します:
-    ![Example of running a Robonomics node](../images/build-dapp-interface/robonomics-node-launch.png "Example of running Robonomics node")
+    ![Example of running a Robonomics node](./images/build-dapp-interface/robonomics-node-launch.png "Example of running Robonomics node")
 
   - **macOS**の場合、**アクセス権**を変更する必要があるかもしれません`chmod +x robonomics`
   - **Polkadot Extensionへのアクセスが許可**されていることを確認してください:
-    ![Polkadot Extension giving access](../images/build-dapp-interface/polkadot-permission.png "Polkadot Extension giving access")
+    ![Polkadot Extension giving access](./images/build-dapp-interface/polkadot-permission.png "Polkadot Extension giving access")
 
   - 実行中のノードのログにエラーがあり、dappが正しくロードされていない場合、devチェーンのデータベースを削除してみてください: `sudo rm -rf <YOUR LOCAL PATH>/robonomics/chains/dev/db/` そしてノードを再起動してください。それでもだめな場合は、マシンを再起動してください。
 
@@ -117,7 +117,7 @@ UIを変更するために、何をどこで修正すればよいかを明確に
 
 これらのCSSファイルをアプリにインポートするには、**main.js**ファイルを編集します:
 
-![VueアプリにグローバルなCSSをインポートする](../images/build-dapp-interface/import-css-vue-1.png "Import global CSS in Vue app")
+![VueアプリにグローバルなCSSをインポートする](./images/build-dapp-interface/import-css-vue-1.png "Import global CSS in Vue app")
 
 ```JS
 import './assets/styles/reset.css'
@@ -128,7 +128,7 @@ import './assets/styles/animation.css'
 
 **dappでフォントが変更されているかどうかを確認:**
 
-![Dapp Interface changing step 1](../images/build-dapp-interface/dapp-1.png "Dapp Interface changing step 1")
+![Dapp Interface changing step 1](./images/build-dapp-interface/dapp-1.png "Dapp Interface changing step 1")
 
 
 ## レイアウトの変更とタイトルの装飾
@@ -232,7 +232,7 @@ body {
 - ロボノミクスウィンタースクール2021のロゴが入ったファイルを、**./src/assets/images**フォルダに置く。
 
 **次のような画面が表示されます:**
-![Dapp Interface changing step 2](../images/build-dapp-interface/dapp-2.png "Dapp Interface changing step 2")
+![Dapp Interface changing step 2](./images/build-dapp-interface/dapp-2.png "Dapp Interface changing step 2")
 
 ## dappのデータに合わせてスタイルを定義する
 
@@ -420,8 +420,8 @@ const timeout = new Promise(resolve => {
 ```
 `300`の代わりに`1700`を設定して、結果を確認します:
 
-<!-- ![Dappインターフェース変更ステップ3](../images/build-dapp-interface/dapp-3.gif "Dappインターフェース変更ステップ3") -->
-<img alt="Dappインターフェース変更ステップ3" src="../images/build-dapp-interface/dapp-3.gif" />
+<!-- ![Dappインターフェース変更ステップ3](./images/build-dapp-interface/dapp-3.gif "Dappインターフェース変更ステップ3") -->
+<img alt="Dappインターフェース変更ステップ3" src="./images/build-dapp-interface/dapp-3.gif" />
 
 
 ## 再利用可能なコンポーネントの使用
@@ -496,7 +496,7 @@ export default {
 ```
 
 **結果の確認:**
-![Dapp Interface changing step 4](../images/build-dapp-interface/dapp-4.png "Dapp Interface changing step 4")
+![Dapp Interface changing step 4](./images/build-dapp-interface/dapp-4.png "Dapp Interface changing step 4")
 
 ### ボタンの追加
 
@@ -653,13 +653,13 @@ export default {
 ```
 
 **次のようなビューが得られます:**
-![Dapp Interface changing step 5](../images/build-dapp-interface/dapp-5.png "Dapp Interface changing step 5")
+![Dapp Interface changing step 5](./images/build-dapp-interface/dapp-5.png "Dapp Interface changing step 5")
 
 Buttonコンポーネントでは、`@onClick`でpropからクリックイベントを発火していますので、faucet機能が正しく動作しているかどうか（クリックで残高が変化するはず）に注目します。
 
 
-<!-- ![Dapp Interface changing step 6](../images/build-dapp-interface/dapp-6.gif "Dapp Interface changing step 6") -->
-<img alt="Dappインターフェース変更ステップ6" src="../images/build-dapp-interface/dapp-6.gif" />
+<!-- ![Dapp Interface changing step 6](./images/build-dapp-interface/dapp-6.gif "Dapp Interface changing step 6") -->
+<img alt="Dappインターフェース変更ステップ6" src="./images/build-dapp-interface/dapp-6.gif" />
 
 ### アイコンの追加
 
@@ -774,7 +774,7 @@ props: {
 
 **確認:**
 
-![Dapp Interface changing step 7](../images/build-dapp-interface/dapp-7.png "Dapp Interface changing step 7")
+![Dapp Interface changing step 7](./images/build-dapp-interface/dapp-7.png "Dapp Interface changing step 7")
 
 ### ポルカドットのアバターを追加する
 
@@ -800,7 +800,7 @@ components: {
 
 **確認:**
 
-![Dapp Interface changing step 8](../images/build-dapp-interface/dapp-8.png "Dapp Interface changing step 8")
+![Dapp Interface changing step 8](./images/build-dapp-interface/dapp-8.png "Dapp Interface changing step 8")
 
 ## 見やすいようにデータを操作する
 
@@ -820,7 +820,7 @@ computed: {
 
 **確認:**
 
-![Dapp Interface changing step 9](../images/build-dapp-interface/dapp-9.png "Dapp Interface changing step 9")
+![Dapp Interface changing step 9](./images/build-dapp-interface/dapp-9.png "Dapp Interface changing step 9")
 
 ## CSS magic
 
@@ -881,8 +881,8 @@ computed: {
 
 </details>
 
-<!-- ![Dapp Interface changing step 10](../images/build-dapp-interface/dapp-10.gif "Dapp Interface changing step 10") -->
-<img alt="Dappインターフェース変更ステップ10" src="../images/build-dapp-interface/dapp-10.gif" />
+<!-- ![Dapp Interface changing step 10](./images/build-dapp-interface/dapp-10.gif "Dapp Interface changing step 10") -->
+<img alt="Dappインターフェース変更ステップ10" src="./images/build-dapp-interface/dapp-10.gif" />
 
 タブのスタイルを編集しましょう:
 
@@ -934,8 +934,8 @@ computed: {
 
 </details>
 
-<!-- ![Dapp Interface changing step 11](../images/build-dapp-interface/dapp-11.gif "Dapp Interface changing step 11") -->
-<img alt="Dappインターフェース変更ステップ11" src="../images/build-dapp-interface/dapp-11.gif" />
+<!-- ![Dapp Interface changing step 11](./images/build-dapp-interface/dapp-11.gif "Dapp Interface changing step 11") -->
+<img alt="Dappインターフェース変更ステップ11" src="./images/build-dapp-interface/dapp-11.gif" />
 
 > このチュートリアルの完成したコードは、[このリポジトリ](https://github.com/positivecrash/wscool21-ui-dapp)にあることを覚えておいてください。そして、次のステップに進みましょう :)
 
@@ -1015,8 +1015,8 @@ input.large, select.large {
 
 **アップデート後にすべてが問題なく動作することを確認してみましょう。:**
 
-<!-- ![Dapp Interface changing step 12](../images/build-dapp-interface/dapp-12.gif "Dapp Interface changing step 12") -->
-<img alt="Dappインターフェース変更ステップ12" src="../images/build-dapp-interface/dapp-12.gif" />
+<!-- ![Dapp Interface changing step 12](./images/build-dapp-interface/dapp-12.gif "Dapp Interface changing step 12") -->
+<img alt="Dappインターフェース変更ステップ12" src="./images/build-dapp-interface/dapp-12.gif" />
 
 dappの中にはdatalogセクションがあるので、そのためのコンポーネントを作ります。
 
@@ -1159,15 +1159,15 @@ filters: {
 
 **DatalogタブのDatalogセクションを確認してみましょう:**
 
-<!-- ![Dapp Interface changing step 13](../images/build-dapp-interface/dapp-13.gif "Dapp Interface changing step 13") -->
-<img alt="Dappインターフェース変更ステップ13" src="../images/build-dapp-interface/dapp-13.gif" />
+<!-- ![Dapp Interface changing step 13](./images/build-dapp-interface/dapp-13.gif "Dapp Interface changing step 13") -->
+<img alt="Dappインターフェース変更ステップ13" src="./images/build-dapp-interface/dapp-13.gif" />
 
 ## 起動
 
 このステップでは、ほとんどの改善点がすでに完了しているので、テンプレートに適用するだけです。ButtonとDatalogコンポーネントをインポートし、過剰なタイトルを削除します:
 
-<!-- ![Dapp Interface changing step 14](../images/build-dapp-interface/dapp-14.gif "Dapp Interface changing step 14") -->
-<img alt="Dappインターフェース変更ステップ14" src="../images/build-dapp-interface/dapp-14.gif" />
+<!-- ![Dapp Interface changing step 14](./images/build-dapp-interface/dapp-14.gif "Dapp Interface changing step 14") -->
+<img alt="Dappインターフェース変更ステップ14" src="./images/build-dapp-interface/dapp-14.gif" />
 
 `select`コントロール要素を`checkbox`に置き換えてみましょう。
 
@@ -1247,8 +1247,8 @@ filters: {
 
 </details>
 
-<!-- ![Dapp Interface changing step 15](../images/build-dapp-interface/dapp-15.gif "Dapp Interface changing step 15") -->
-<img alt="Dappインターフェース変更ステップ15" src="../images/build-dapp-interface/dapp-15.gif" />
+<!-- ![Dapp Interface changing step 15](./images/build-dapp-interface/dapp-15.gif "Dapp Interface changing step 15") -->
+<img alt="Dappインターフェース変更ステップ15" src="./images/build-dapp-interface/dapp-15.gif" />
 
 インターフェイスについて明確にしておきたいことがあります。これらの要素を使って、いくつかのデバイスを開始します。それをイメージしてみましょう。ここではドローンを選んだので、`item.parameter`に応じてクラスを切り替えます。
 
@@ -1326,8 +1326,8 @@ methods: {
 
 </details>
 
-<!-- ![Dapp Interface changing step 16](../images/build-dapp-interface/dapp-16.gif "Dapp Interface changing step 16") -->
-<img alt="Dappインターフェース変更ステップ16" src="../images/build-dapp-interface/dapp-16.gif" />
+<!-- ![Dapp Interface changing step 16](./images/build-dapp-interface/dapp-16.gif "Dapp Interface changing step 16") -->
+<img alt="Dappインターフェース変更ステップ16" src="./images/build-dapp-interface/dapp-16.gif" />
 
 それでは、**DatalogSection.vue**コンポーネントを追加しましょう。
 ```JS
@@ -1378,8 +1378,8 @@ this.log.push([new Date().toLocaleString(), {
 ```
 
 **確認:**
-<!-- ![Dapp Interface changing step 17](../images/build-dapp-interface/dapp-17.gif "Dapp Interface changing step 17") -->
-<img alt="Dappインターフェース変更ステップ17" src="../images/build-dapp-interface/dapp-17.gif" />
+<!-- ![Dapp Interface changing step 17](./images/build-dapp-interface/dapp-17.gif "Dapp Interface changing step 17") -->
+<img alt="Dappインターフェース変更ステップ17" src="./images/build-dapp-interface/dapp-17.gif" />
 
 時々、いくつかのエラーが出ることがあります。接続がうまくいかなかったり、何か他のことが起こる可能性があります。そこで、Dappの中にエラーメッセージ付きのフォールバックを用意しました。
 
@@ -1389,7 +1389,7 @@ this.log.push([new Date().toLocaleString(), {
 
 インターフェースでは、エラーはこのようになっています。:
 
-![Dapp Interface changing step 18](../images/build-dapp-interface/dapp-18.png "Dapp Interface changing step 18")
+![Dapp Interface changing step 18](./images/build-dapp-interface/dapp-18.png "Dapp Interface changing step 18")
 
 **app.css**に`.error`のスタイルを追加します:
 
@@ -1412,11 +1412,11 @@ this.log.push([new Date().toLocaleString(), {
 
 以下のようになります:
 
-![Dapp Interface changing step 19](../images/build-dapp-interface/dapp-19.png "Dapp Interface changing step 19")
+![Dapp Interface changing step 19](./images/build-dapp-interface/dapp-19.png "Dapp Interface changing step 19")
 
 このページでは、ボタンを「primary」にしています。技術的には問題ありませんが、上記のユーザーエクスペリエンスからすると、これは問題ありません。画面上に複数のプライマリ・ボタンを使用しない方が良いでしょう。そこで、**Launch.vue**に`type="secondary "`のプロパティを持つ`ボタン`を追加して、この問題を解決しましょう。
 
-![Dapp Interface changing step 20](../images/build-dapp-interface/dapp-20.png "Dapp Interface changing step 20")
+![Dapp Interface changing step 20](./images/build-dapp-interface/dapp-20.png "Dapp Interface changing step 20")
 
 良い感じ、次はノードの問題を解決して、デモのステップに進みましょう。
 
@@ -1435,7 +1435,7 @@ data() {
 },
 ```
 
-![Dapp Interface changing step 21](../images/build-dapp-interface/dapp-21.png "Dapp Interface changing step 21")
+![Dapp Interface changing step 21](./images/build-dapp-interface/dapp-21.png "Dapp Interface changing step 21")
 
 いつものように、すでにあるものを変更することから始めましょう。
 
@@ -1486,12 +1486,12 @@ filters: {
 ```
 
 **確認:**
-![Dapp Interface changing step 22](../images/build-dapp-interface/dapp-22.png "Dapp Interface changing step 22")
+![Dapp Interface changing step 22](./images/build-dapp-interface/dapp-22.png "Dapp Interface changing step 22")
 
 今回のロボット起動のデモ例をカスタマイズするには、自由にアイデアを出すことができます。個人的にはこの街から始めました。
 
-<!-- ![Dapp Interface changing step 23](../images/build-dapp-interface/dapp-23.gif "Dapp Interface changing step 23") -->
-<img alt="Dappインターフェース変更ステップ23" src="../images/build-dapp-interface/dapp-23.gif" />
+<!-- ![Dapp Interface changing step 23](./images/build-dapp-interface/dapp-23.gif "Dapp Interface changing step 23") -->
+<img alt="Dappインターフェース変更ステップ23" src="./images/build-dapp-interface/dapp-23.gif" />
 
 混乱しないように全体のコードは示しませんが、概略的には次のようなものになります。
 
@@ -1777,8 +1777,8 @@ div.demo-city-1 {
 
 **結果:**
 
-<!-- ![Dapp Interface changing step 25](../images/build-dapp-interface/dapp-25.gif "Dapp Interface changing step 25") -->
-<img alt="Dappインターフェース変更ステップ25" src="../images/build-dapp-interface/dapp-25.gif" />
+<!-- ![Dapp Interface changing step 25](./images/build-dapp-interface/dapp-25.gif "Dapp Interface changing step 25") -->
+<img alt="Dappインターフェース変更ステップ25" src="./images/build-dapp-interface/dapp-25.gif" />
 
 ## Conclusion
 

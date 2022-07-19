@@ -23,7 +23,7 @@ https://www.youtube.com/watch?v=dliLb6GHgpo&feature=youtu.be
 ## 1. Add dependencies
 If we launch a simulation and look at the topic list (see previous tutorial), we will see, that there is one topic containing front camera data and using `sensor_msgs/Image` message type:
 
-![front_camera](../images/drone-demo/front_camera.jpg "front_camera")
+![front_camera](./images/drone-demo/front_camera.jpg "front_camera")
 
 Let's try to take a picture every 1 second and after the flight publish these photos to IPFS. If you have completed the first tutorial, you don't need to download anything else. It's the `drone_sample_controller_pictures.py` script.
 ## 2. Manage accounts in DAPP
@@ -37,7 +37,7 @@ rm -rf /home/$USER/.local/share/robonomics/chains/dev/db
 ```
 After a successful launch create accounts following [this](/docs/create-account-in-dapp) manual. **Do not forget to save each account's seed and address! You will need them for transactions**. Add these addresses, seeds and path to robonomics binary file to file `config.config` in `robonomics_ws/src/robonomics_sample_controller/src`. Transfer some money (units) to these accounts:
 
-![balances](../images/drone-demo/balances.jpg "balances")
+![balances](./images/drone-demo/balances.jpg "balances")
 ## 3. Launch
 Up to now the **only thing running** should be the robonomics local node. In a separate terminal launch drone simulation:
 ```
@@ -59,8 +59,8 @@ echo "ON" | ./robonomics io write launch -r <DRONE_ADDRESS> -s <EMPLOYER’S_KEY
 Where `<DRONE_ADDRESS>`  and `<EMPLOYER’S_KEY>` are replaced with  previously saved strings accordingly.
 You should see the log `"Taking Off"` and the drone should start flying and taking pictures:
 
-![flying_picturing](../images/drone-demo/flying_picturing.jpg "flying_picturing")
+![flying_picturing](./images/drone-demo/flying_picturing.jpg "flying_picturing")
 
 Later, when the job is done, on the Robonomics portal go to `Developer` -> `Chain state` and add a `DRONE` datalog using `“+”` button with selected `datalog` as state query. The IPFS hash of the telemetry has been saved in the blockchain. To see the data simply copy the hash and add it to the local [gateway](https://gateway.ipfs.io/ipfs/QmeYYwD4y4DgVVdAzhT7wW5vrvmbKPQj8wcV2pAzjbj886/docs/getting-started/) address `localhost:8080/ipfs/`:
 
-![Voila](../images/drone-demo/datalog.jpg "Voila")
+![Voila](./images/drone-demo/datalog.jpg "Voila")

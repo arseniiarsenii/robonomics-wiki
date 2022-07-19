@@ -59,7 +59,7 @@ In a new window
 source ~/catkin_ws/devel/setup.bash
 rosrun manipulator_gazebo move_arm_server
 ```
-![model](../images/kuka-demo/1.png)
+![model](./images/kuka-demo/1.png)
 ***
 ## Running robonomics
 Go to the folder with robonomics file ad create a local robonomics network:
@@ -67,19 +67,19 @@ Go to the folder with robonomics file ad create a local robonomics network:
 ./robonomics --dev --tmp
 ```
 
-![robonomics](../images/kuka-demo/robonomics.png)
+![robonomics](./images/kuka-demo/robonomics.png)
 
 Go to [Robonomics Parachain portal](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkusama.rpc.robonomics.network%2F#/) and switch to local node
 
-![local](../images/kuka-demo/local.png)
+![local](./images/kuka-demo/local.png)
 
 Then go to Accounts and create `KUKA` account. Save account's mnemonic key, you will need it later. 
 
-![acc](../images/kuka-demo/create_acc.png)
+![acc](./images/kuka-demo/create_acc.png)
 
 Send some units to the new account from one of default accounts.
 
-![accs](../images/kuka-demo/send_money.png)
+![accs](./images/kuka-demo/send_money.png)
 ***
 ## Running ipfs
 Run ipfs daemon:
@@ -101,20 +101,20 @@ Now you can run control script:
 source ~/catkin_ws/devel/setup.bash
 rosrun kuka_controller move_arm_client.py
 ```
-![control](../images/kuka-demo/run.png)
+![control](./images/kuka-demo/run.png)
 
 ## Sending transaction
 In [Robonomics Parachain portal](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkusama.rpc.robonomics.network%2F#/) go to `Developer/Extrinsics`, change `extrinsic` to `launch`. Chose your `KUKA` account in `robot` and change `param` to `Yes`. The press `Submit Transaction`
 
-![transaction](../images/kuka-demo/launch.png)
+![transaction](./images/kuka-demo/launch.png)
 
 In the window with kuka_control package you will see:
 
-![done](../images/kuka-demo/res.png)
+![done](./images/kuka-demo/res.png)
 
 Then go `Developer/Chain State` on the Robonomics portal, select `datalog` and `datalogItem((AccountId,u64)): RingBufferItem` in query and add `KUKA` datalog with button '+':
 
-![datalog](../images/kuka-demo/datalog.png)
+![datalog](./images/kuka-demo/datalog.png)
 
 Now you can find robot's telemetry in IPFS via this link with your hash `https://gateway.ipfs.io/ipfs/<hash>`.
 

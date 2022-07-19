@@ -61,11 +61,11 @@ Then in a new terminal:
 source ~/catkin_ws/devel/setup.bash
 roslaunch spot_viz view_robot.launch
 ``` 
-![spot_viz](../images/spot/spot.jpg)
+![spot_viz](./images/spot/spot.jpg)
 
 
 Play rosbag file and you will see the robot move:
 ```bash
 rosbag play spot_rosbag.bag
 ```
-![spot_viz](../images/spot/spot2.jpg)
+![spot_viz](./images/spot/spot2.jpg)

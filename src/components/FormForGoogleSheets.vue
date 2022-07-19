@@ -146,7 +146,7 @@ export default {
     display: flex;
     align-items: center;
     border: 1px solid transparent;
-    background-color: var(--color-note-pale);
+    background-color: var(--color-note-accent);
     color: var(--text-color-invert);
   }
 
@@ -157,5 +157,5 @@ export default {
 
   .google-sheets-form__button--smile  {background-color: var(--color-emoji-green);}
   .google-sheets-form__button--rolling_eyes {background-color: var(--color-emoji-pink);}
-  .google-sheets-form__button--worry_grin {background-color: var(---color-emoji-orange);}
+  .google-sheets-form__button--worry_grin {background-color: var(--color-emoji-orange);}
 </style>

@@ -6,7 +6,7 @@ translated: true
 ---
 
 ## PLC scheme
-![PLC](../images/lightsout-factory/plc.png)<br>
+![PLC](./images/lightsout-factory/plc.png)<br>
 <b>Notice! </b>AN ports are not represented on the scheme above. Check out table below to see description.<br><br>
 Main PLC block has its own connection scheme. The rest of the blocks are all similar to each other.<br>
 More information about ports can be found [here](https://docs.google.com/spreadsheets/d/1g_LuqgdKADWxOYnbkcRyZtqtx3cMqh8EEH0UOrVdQ5M).<br>

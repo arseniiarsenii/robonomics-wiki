@@ -33,26 +33,26 @@ ssh -f -N -L 9989:127.0.0.1:9989 root@REMOTE_SERVER_IP
 ```
 Después de eso, puede usar `ws://127.0.0.1:9944`, `ws://127.0.0.1:9988`and `ws://127.0.0.1:9989` en https://parachain.robonomics.network/
 
-![relay](../images/ws_lesson4/upcoming.jpg)
+![relay](./images/ws_lesson4/upcoming.jpg)
 
 Hace algún tiempo se deberían registrar las parachains.
 
-![relay2](../images/ws_lesson4/parachains.jpg)
+![relay2](./images/ws_lesson4/parachains.jpg)
 
 Y empieza a producir bloques.
 
-![relay3](../images/ws_lesson4/parachains2.jpg)
+![relay3](./images/ws_lesson4/parachains2.jpg)
 
 Como siguiente paso, creemos un canal HRMP para pasar mensajes entre parachains. Usaré la llamada del módulo `sudo` en la página de la relay chain.
 
-![hrmp](../images/ws_lesson4/hrmp.jpg)
+![hrmp](./images/ws_lesson4/hrmp.jpg)
 
 Cuando se crea el canal, las llamadas XCM están disponibles. Usemos la paleta `datalogXcm`, una versión XCM de la paleta de `datalog`.
 
-![datalogXcmSend](../images/ws_lesson4/datalogXcmSend.jpg)
+![datalogXcmSend](./images/ws_lesson4/datalogXcmSend.jpg)
 
 Como resultado, el mensaje en el segundo parachain llamará a la paleta de `datalog` y escribirá los datos en la cadena.
 
-![datalogXcmRecv](../images/ws_lesson4/datalogXcmRecv.jpg)
+![datalogXcmRecv](./images/ws_lesson4/datalogXcmRecv.jpg)
 
 Como resultado, este ejemplo demuestra cómo se podría utilizar XCM para el uso de cadenas cruzadas de palets estándar de robonomics.

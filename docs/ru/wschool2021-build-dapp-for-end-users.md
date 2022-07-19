@@ -35,7 +35,7 @@ To store keys in a browser, there is a `polkadot{.js} extension`. In dApp we wil
 The extension is currently available for `Google chrome` and `Firefox` https://polkadot.js.org/extension/
 
 After installing the extension, create a new account.
-![screen1](../images/build-iot-dapps/screen1.png)
+![screen1](./images/build-iot-dapps/screen1.png)
 
 > The first step is completed.
 
@@ -449,7 +449,7 @@ yarn serve
 
 As a result we will get this picture in the browser
 
-![screen2](../images/build-iot-dapps/screen2.png)
+![screen2](./images/build-iot-dapps/screen2.png)
 
 ### Step 4. Datalog
 
@@ -633,7 +633,7 @@ yarn serve
 
 As a result we will get this picture in the browser
 
-![screen3](../images/build-iot-dapps/screen3.png)
+![screen3](./images/build-iot-dapps/screen3.png)
 
 ### Step 5. Launch
 
@@ -808,7 +808,7 @@ yarn serve
 
 As a result we will get this picture in the browser
 
-![screen4](../images/build-iot-dapps/screen4.png)
+![screen4](./images/build-iot-dapps/screen4.png)
 
 ### Step 6. Demo
 
@@ -901,7 +901,7 @@ For visualization, we will create a `Demo.vue` component, where we will have a s
   font-style: 14px;
   animation: move 30s linear infinite;
   border-radius: 0 10px 10px 0;
-  background: url("../images/build-iot-dapps/car.png") no-repeat 0 0;
+  background: url("./images/build-iot-dapps/car.png") no-repeat 0 0;
   background-size: cover;
 }
 .robot-play {
@@ -1051,7 +1051,7 @@ yarn serve
 
 As a result we will get this picture in the browser
 
-![screen5](../images/build-iot-dapps/screen5.png)
+![screen5](./images/build-iot-dapps/screen5.png)
 
 This concludes our lesson.
 

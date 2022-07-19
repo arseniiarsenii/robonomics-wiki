@@ -48,7 +48,7 @@ catkin build
 ```shell
 roslaunch curiosity_mars_rover_description main_real_mars.launch
 ```
-![марсоход](../images/curiosity-demo/rover.jpg?raw=true "Марсоход")
+![марсоход](./images/curiosity-demo/rover.jpg?raw=true "Марсоход")
 
 Заметьте: если картинка темная, например, затененная, измените `Camera` на `Orthorgraphic` в панели инструментов Gazebo.
 Симуляцию можно закрыть на некоторое время.
@@ -75,19 +75,19 @@ catkin build -DPYTHON_EXECUTABLE=/usr/bin/python3 # The controller supports pyth
 ./robonomics --dev --tmp
 ```
 
-![Запускаем узел](../images/curiosity-demo/robonomics.jpg?raw=true "Запускаем узел")
+![Запускаем узел](./images/curiosity-demo/robonomics.jpg?raw=true "Запускаем узел")
 
 
 Перейдите на [портал парачейна Робономики](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkusama.rpc.robonomics.network%2F#/) и переключитесь на локальный узел. 
 
-![Локальный узел](../images/curiosity-demo/local_node.jpg?raw=true "Локальный узел")
+![Локальный узел](./images/curiosity-demo/local_node.jpg?raw=true "Локальный узел")
 
 
 Перейдите в Accounts и создайте аккаунты **CURIOSITY** и **EMPLOYER**.
 
 **Важно**! Скопируйте адрес каждого аккаунта (чтобы это сделать, кликните на иконку аккаунта) и **сид-фразу** аккаунта Curiosity (сгенерированную при создании аккаунта). Отправьте токены на эти аккаунты. Подробнее об аккаунтах Робономики можно прочесть [здесь](https://wiki.robonomics.network/docs/ru/create-account-in-dapp/)
 
-![Создание аккаунта](../images/curiosity-demo/account_creation.jpg?raw=true "Создание аккаунта")
+![Создание аккаунта](./images/curiosity-demo/account_creation.jpg?raw=true "Создание аккаунта")
 
 
 Добавьте эти адреса, сид и адрес узла (по умолчанию `ws://127.0.0.1:9944` - узел разработчика) в `config.config` в `robonomics_ws/src/robonomics_sample_controller/src`. Без кавычек.
@@ -115,29 +115,29 @@ roslaunch curiosity_mars_rover_description main_real_mars.launch
 ```shell
 rosrun robonomics_sample_controller sample_controller.py
 ```
-![Контроллер](../images/curiosity-demo/controller.jpg?raw=true "Контроллер")
+![Контроллер](./images/curiosity-demo/controller.jpg?raw=true "Контроллер")
 
 
 Теперь Вы можете отправлять транзакции, запускающие движение и сборку данных марсоходом. Чтобы это сделать, Вы можете использовать все тот же [портал парачейна Робономики](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkusama.rpc.robonomics.network%2F#/).
 Перейдите в `Developer->Extrinsics` и выберите аккаунт employer для Curiosity, экстринсик `launch`, аккаунт Curiosity как целевой аккаунт и `yes` как параметр.
 Отправьте экстринсик.
 
-![Экстринсик](../images/curiosity-demo/extrinsic.jpg?raw=true "Экстринсик")
+![Экстринсик](./images/curiosity-demo/extrinsic.jpg?raw=true "Экстринсик")
 
 
 Робот должен начать двигаться. Он не будет принимать команды от других аккаунтов, а также команды с параметром `no`. Марсоход будет двигаться и собирать данные примерно около минуты.
 Затем, после выполнения работы:
 
-![Работа выполнена](../images/curiosity-demo/job_done.jpg?raw=true "Работа выполнена")
+![Работа выполнена](./images/curiosity-demo/job_done.jpg?raw=true "Работа выполнена")
 
 
 На портале Робономики перейдите в `Developer -> Chain state` и получите журнал данных `CURIOSITY`, используя кнопку “+” с выбранным `datalog -> RingBufferItem` в качестве запроса: 
 
-![Журнал данных](../images/curiosity-demo/datalog.jpg?raw=true "Журнал данных")
+![Журнал данных](./images/curiosity-demo/datalog.jpg?raw=true "Журнал данных")
 
 Теперь хэш IPFS телеметрии сохранен в блокчейне. Чтобы посмотреть данные, просто скопируйте хэш и найдите его на шлюзе:
 
-![Данные в IPFS](../images/curiosity-demo/data_in_ipfs.jpg?raw=true "Данные в IPFS")
+![Данные в IPFS](./images/curiosity-demo/data_in_ipfs.jpg?raw=true "Данные в IPFS")
 
 
 Эта телеметрия хранится в децентрализованном хранилище, а ее хэш хранится в блокчейне!

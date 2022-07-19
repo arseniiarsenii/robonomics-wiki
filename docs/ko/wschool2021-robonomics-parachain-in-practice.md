@@ -33,26 +33,26 @@ ssh -f -N -L 9989:127.0.0.1:9989 root@REMOTE_SERVER_IP
 ```
 그런 다음에는 https://parachain.robonomics.network/ 에서 `ws://127.0.0.1:9944`, `ws://127.0.0.1:9988` 및 `ws://127.0.0.1:9989`를 사용할 수 있습니다.
 
-![relay](../images/ws_lesson4/upcoming.jpg)
+![relay](./images/ws_lesson4/upcoming.jpg)
 
 잠시 후에 파라 체인을 등록해야합니다.
 
-![relay2](../images/ws_lesson4/parachains.jpg)
+![relay2](./images/ws_lesson4/parachains.jpg)
 
 그리고 블록 생산을 시작합니다.
 
-![relay3](../images/ws_lesson4/parachains2.jpg)
+![relay3](./images/ws_lesson4/parachains2.jpg)
 
 다음 단계로 파라체인간에 메시지를 전달하는 HRMP 채널을 만들어 보겠습니다. 릴레이 체인 페이지에서 `sudo` 모듈 호출을 사용하겠습니다.
 
-![hrmp](../images/ws_lesson4/hrmp.jpg)
+![hrmp](./images/ws_lesson4/hrmp.jpg)
 
 채널이 생성되면 XCM 호출을 사용할 수 있습니다. `데이터 로그` 팔레트의 XCM 버전인 `datalogXcm` 팔레트를 사용해 보겠습니다.
 
-![datalogXcmSend](../images/ws_lesson4/datalogXcmSend.jpg)
+![datalogXcmSend](./images/ws_lesson4/datalogXcmSend.jpg)
 
 결과적으로 두 번째 파라체인의 메시지는 데이터 로그 팔레트를 호출하고 데이터를 체인에 기록합니다.
 
-![datalogXcmRecv](../images/ws_lesson4/datalogXcmRecv.jpg)
+![datalogXcmRecv](./images/ws_lesson4/datalogXcmRecv.jpg)
 
 결과적으로이 예제는 XCM을 표준 Robonomics 팔레트의 크로스체인 사용에 사용하는 방법을 보여줍니다.

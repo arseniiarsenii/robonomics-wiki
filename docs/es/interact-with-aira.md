@@ -33,7 +33,7 @@ rosrun hello_aira hello_aira
 
 Ejecute uno por uno los comandos anteriores. Después del último, debería ver un enlace a DApp generado específicamente para su instancia.
 
-![Terminal con AIRA](../images/aira_hello_terminal.jpg "Terminal con AIRA")
+![Terminal con AIRA](./images/aira_hello_terminal.jpg "Terminal con AIRA")
 
 Haga clic en el enlace, debería mostrarse la DApp.
 
@@ -41,19 +41,19 @@ Haga clic en el enlace, debería mostrarse la DApp.
 
 Conecte [MetaMask](http://metamask.io/) si se le solicita y haga clic en el botón.
 
-![Solicitar conexión en Robonomics Dapp](../images/aira_hello_dapp.jpg "Solicitar conexión en Robonomics Dapp")
+![Solicitar conexión en Robonomics Dapp](./images/aira_hello_dapp.jpg "Solicitar conexión en Robonomics Dapp")
 
 Firme el mensaje como de costumbre y espere el resultado.
 
-![Espere el resultado de la solicitud](../images/aira_hello_dapp_2.jpg "Espere el resultado de la solicitud")
+![Espere el resultado de la solicitud](./images/aira_hello_dapp_2.jpg "Espere el resultado de la solicitud")
 
 Mientras tanto, echa un vistazo a la terminal. Deberías ver el saludo.
 
-![Saludo de AIRA en la terminal](../images/aira_hello_terminal_2.jpg "Saludo de AIRA en la terminal")
+![Saludo de AIRA en la terminal](./images/aira_hello_terminal_2.jpg "Saludo de AIRA en la terminal")
 
 Al final aparecerá el saludo en la DApp.
 
-![Saludo de la DApp de Robonomics para AIRA](../images/aira_hello_dapp_3.jpg "Saludo de la DApp de Robonomics para AIRA")
+![Saludo de la DApp de Robonomics para AIRA](./images/aira_hello_dapp_3.jpg "Saludo de la DApp de Robonomics para AIRA")
 
 ## Solución de Problemas
 

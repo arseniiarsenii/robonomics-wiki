@@ -7,7 +7,7 @@ translated: true
 
 You can operate with Robonomics Network using the interface of [Robonomics Network Dapp (decentralized application)](https://dapp.robonomics.network/#/). It is available in browsers with [Metamask extension](https://metamask.io). On the first page you will see the statistics of the network:
 
-![Robonomics DApp's first page](../images/robonomics_dapp_first_page.jpg "Robonomics DApp's first page")
+![Robonomics DApp's first page](./images/robonomics_dapp_first_page.jpg "Robonomics DApp's first page")
 
 Let's have a look at the bottom table "Robonomics Telemetry".
 

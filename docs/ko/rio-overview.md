@@ -112,7 +112,7 @@ For testing purpose it's possible to run the development environment:
 
 `--rpc-cors all` allows the [Robonomics Parachain portal](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkusama.rpc.robonomics.network%2F#/) to be connected to local node. After launching the node, go to the dapp, click on Robonomics icon in the upper left corner, choose Development and put node's local address
 
-![Robonomics Dapp Connect to Local Node](../images/robonomics-dapp-connect-local.jpg "Robonomics Dapp Connect to Local Node")
+![Robonomics Dapp Connect to Local Node](./images/robonomics-dapp-connect-local.jpg "Robonomics Dapp Connect to Local Node")
 
 Finally click Switch and you should be connected to the local node. Check out Accounts tab. There you can create new accounts and transfer tokens.
 

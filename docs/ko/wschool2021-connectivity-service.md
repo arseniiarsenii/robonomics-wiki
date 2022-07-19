@@ -102,7 +102,7 @@ https://www.youtube.com/watch?v=yxqxBk-6bpI
 
 먼저 Aira OS가 실행 중이면 중지하고 해당 USB 장치를 추가하십시오
 
-![VB USB Forwarding](../images/vb_forward_usb.jpg)
+![VB USB Forwarding](./images/vb_forward_usb.jpg)
 
 VM을 시작하고 SSH를 통해 연결 한 다음 VM의 USB 장치에 따라 `comstation/port` 옵션을 설정합니다. 또한 `comstation`을 활성화하고 위도와 경도를 설정하십시오. 결국 `config/my.json`은 다음과 같아야합니다.
 

@@ -35,7 +35,7 @@ chmod +x robonomics
 この拡張機能は現在、`Google chrome` と `Firefox` で利用可能です。https://polkadot.js.org/extension/ 
 
 拡張機能をインストールしたら、新しいアカウントを作成します。 
-![screen1](../images/build-iot-dapps/screen1.png)
+![screen1](./images/build-iot-dapps/screen1.png)
 
 > 最初のステップが完了しました。
 
@@ -451,7 +451,7 @@ yarn serve
 
 As a result we will get this picture in the browser
 
-![screen2](../images/build-iot-dapps/screen2.png)
+![screen2](./images/build-iot-dapps/screen2.png)
 
 ### Step 4. データログ
 
@@ -637,7 +637,7 @@ yarn serve
 
 その結果、ブラウザには次のような画像が表示されます。
 
-![screen3](../images/build-iot-dapps/screen3.png)
+![screen3](./images/build-iot-dapps/screen3.png)
 
 ### Step 5. 起動
 
@@ -814,7 +814,7 @@ yarn serve
 
 その結果、ブラウザには次のような画像が表示されます。
 
-![screen4](../images/build-iot-dapps/screen4.png)
+![screen4](./images/build-iot-dapps/screen4.png)
 
 ### Step 6. デモ
 
@@ -907,7 +907,7 @@ yarn serve
   font-style: 14px;
   animation: move 30s linear infinite;
   border-radius: 0 10px 10px 0;
-  background: url("../images/build-iot-dapps/car.png") no-repeat 0 0;
+  background: url("./images/build-iot-dapps/car.png") no-repeat 0 0;
   background-size: cover;
 }
 .robot-play {
@@ -1057,7 +1057,7 @@ yarn serve
 
 その結果、ブラウザには次のような画像が表示されます。
 
-![screen5](../images/build-iot-dapps/screen5.png)
+![screen5](./images/build-iot-dapps/screen5.png)
 
 以上で、今回のレッスンは終了です。
 

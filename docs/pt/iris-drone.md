@@ -103,14 +103,14 @@ To create a local robonomics network go to the folder with the robonomic binary 
 
 Add robonomic's path to `config.py`
 
-![IPFS](../images/iris-drone-demo/IPFS.jpg)
+![IPFS](./images/iris-drone-demo/IPFS.jpg)
 
 Go to the [Robonomics Parachain portal](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkusama.rpc.robonomics.network%2F#/) and switch to local node.
-![localNode](../images/iris-drone-demo/localNode.jpg)
+![localNode](./images/iris-drone-demo/localNode.jpg)
 
 Go to **Accounts** and create **DRONE** and **EMPLOYER** accounts. Save the account names and keys and path to **robonomics** to `~/catkin_ws/src/drone_sim/src/config.py`. Transfer some money into the accounts.
 
-![accounts](../images/iris-drone-demo/addingAcc.jpg)
+![accounts](./images/iris-drone-demo/addingAcc.jpg)
 
 ## Running Simulation
 Run IPFS daemon
@@ -126,18 +126,18 @@ python3 takeoff.py
 ```
 Waiting till "Waiting for payment" 
 
-![launch](../images/iris-drone-demo/launch.jpg)
+![launch](./images/iris-drone-demo/launch.jpg)
 
 To send a transaction run in another window:
 `echo "ON" | ./robonomics io write launch -r <drone_addres> -s <employer_key>` - where **<drone_address>** and **<employer_key>** should be replaced with the strings from `config.py` accordingly.
 
 After data was pushed to IPFS, go to the **Chain State** in [Robonomics Parachain portal](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkusama.rpc.robonomics.network%2F#/). Select **datalog** in query and add DRONE datalog using `+` button.
 
-![datalog](../images/iris-drone-demo/datalog.jpg)
+![datalog](./images/iris-drone-demo/datalog.jpg)
 
 You can find drone's telemetry running `https://gateway.ipfs.io/ipfs/<hash>` inserting the hash from above.
 
-![output](../images/iris-drone-demo/output.jpg)
+![output](./images/iris-drone-demo/output.jpg)
 
 It's important to remove `db` derictory before next launches using  
 ` rm -rf ~/.local/share/robonomics/chains/dev/db`

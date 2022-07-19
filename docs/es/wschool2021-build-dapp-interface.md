@@ -5,8 +5,8 @@ contributors: [positivecrash]
 translated: true
 ---
 
-<!-- ![Building User Interface for Decentralized Applications, on top of Robonomics and Polkadot](../images/build-dapp-interface/sum.gif "Building User Interface for Decentralized Applications, on top of Robonomics and Polkadot") -->
-<img src="../images/build-dapp-interface/sum.gif" alt="Building User Interface for Decentralized Applications, on top of Robonomics and Polkadot" />
+<!-- ![Building User Interface for Decentralized Applications, on top of Robonomics and Polkadot](./images/build-dapp-interface/sum.gif "Building User Interface for Decentralized Applications, on top of Robonomics and Polkadot") -->
+<img src="./images/build-dapp-interface/sum.gif" alt="Building User Interface for Decentralized Applications, on top of Robonomics and Polkadot" />
 
 ## Introducción
 
@@ -45,7 +45,7 @@ yarn serve
 
 **Debería tener esta pantalla en su navegador:**
 
-![Dapp Start](../images/build-dapp-interface/dapp-start.png "Dapp Start")
+![Dapp Start](./images/build-dapp-interface/dapp-start.png "Dapp Start")
 
 
 <details>
@@ -53,12 +53,12 @@ yarn serve
   <summary>Algunos consejos adicionales para el lanzamiento</summary>
 
   - Asegúrate de que tu **nodo se esté ejecutando**:
-    ![Example of running a Robonomics node](../images/build-dapp-interface/robonomics-node-launch.png "Example of running Robonomics node")
+    ![Example of running a Robonomics node](./images/build-dapp-interface/robonomics-node-launch.png "Example of running Robonomics node")
 
   - En **macOS**, es posible que deba cambiar los **permisos de acceso** `chmod +x robonomics`
 
   - Asegúrese de haber permitido **acceso para Polkadot Extension**:
-    ![Polkadot Extension giving access](../images/build-dapp-interface/polkadot-permission.png "Polkadot Extension giving access")
+    ![Polkadot Extension giving access](./images/build-dapp-interface/polkadot-permission.png "Polkadot Extension giving access")
 
   - Si tiene errores en el registro del nodo en ejecución y dapp no se carga correctamente, intente eliminar la base de datos de la cadena de desarrollo: `sudo rm -rf <YOUR LOCAL PATH>/robonomics/chains/dev/db/` y reinicia el nodo. Si no ayuda, reinicie su máquina.
 
@@ -115,7 +115,7 @@ No tengo ningún diseño específico para este dapp, pero tengo [Brandbook](http
 En su lugar, puede escribir el contenido de cualquiera de estos archivos en App.vue, si se ajusta mejor a su percepción. Pero recomiendo importar algunos archivos CSS globalmente para este ejemplo para mantener App.vue un poco más claro.
 
 Importe estos archivos CSS a su aplicación editando el archivo **main.js**:
-![Importar CSS global en la Vue app](../images/build-dapp-interface/import-css-vue-1.png "Import global CSS in Vue app")
+![Importar CSS global en la Vue app](./images/build-dapp-interface/import-css-vue-1.png "Import global CSS in Vue app")
 
 ```JS
 import './assets/styles/reset.css'
@@ -126,7 +126,7 @@ import './assets/styles/animation.css'
 
 **Compruebe si se han cambiado las fuentes en la dapp:**
 
-![Paso 1 de cambio de interfaz Dapp](../images/build-dapp-interface/dapp-1.png "Dapp Interface changing step 1")
+![Paso 1 de cambio de interfaz Dapp](./images/build-dapp-interface/dapp-1.png "Dapp Interface changing step 1")
 
 
 ## Cambiar el diseño y pretificar el titulo
@@ -229,7 +229,7 @@ body {
 - Coloque un archivo con el logo de la escuela de invierno de Robonomics Winter School 2021 en la carpeta **./src/assets/images**
 
 **Obtendrá la siguiente pantalla:**
-![Paso 2 de cambio de interfaz Dapp](../images/build-dapp-interface/dapp-2.png "Dapp Interface changing step 2")
+![Paso 2 de cambio de interfaz Dapp](./images/build-dapp-interface/dapp-2.png "Dapp Interface changing step 2")
 
 ## Definir estilos segun los datos de la Dapp
 
@@ -413,8 +413,8 @@ const timeout = new Promise(resolve => {
 ```
 Configuré `1700` en lugar de `300` y verifico el resultado:
 
-<!-- ![Dapp Interface changing step 3](../images/build-dapp-interface/dapp-3.gif "Dapp Interface changing step 3") -->
-<img src="../images/build-dapp-interface/dapp-3.gif" alt="Dapp Interface changing step 3" />
+<!-- ![Dapp Interface changing step 3](./images/build-dapp-interface/dapp-3.gif "Dapp Interface changing step 3") -->
+<img src="./images/build-dapp-interface/dapp-3.gif" alt="Dapp Interface changing step 3" />
 
 
 ## Uso componentes reutilizables
@@ -489,7 +489,7 @@ export default {
 ```
 
 **Comprueba el resultado:**
-![Dapp Interface changing step 4](../images/build-dapp-interface/dapp-4.png "Dapp Interface changing step 4")
+![Dapp Interface changing step 4](./images/build-dapp-interface/dapp-4.png "Dapp Interface changing step 4")
 
 ### Añadir el Boton
 
@@ -646,12 +646,12 @@ export default {
 ```
 
 **Obtenemos esta vista:**
-![Dapp Interface changing step 5](../images/build-dapp-interface/dapp-5.png "Dapp Interface changing step 5")
+![Dapp Interface changing step 5](./images/build-dapp-interface/dapp-5.png "Dapp Interface changing step 5")
 
 Para el componente Botón, hemos emitido el clic de prop con `@onClick`, por lo que prestaré atención si la función de faucet está funcionando correctamente ahora (el saldo debería cambiar al hacer clic):
 
-<!-- ![Dapp Interface changing step 6](../images/build-dapp-interface/dapp-6.gif "Dapp Interface changing step 6") -->
-<img src="../images/build-dapp-interface/dapp-6.gif" alt="Dapp Interface changing step 6" />
+<!-- ![Dapp Interface changing step 6](./images/build-dapp-interface/dapp-6.gif "Dapp Interface changing step 6") -->
+<img src="./images/build-dapp-interface/dapp-6.gif" alt="Dapp Interface changing step 6" />
 
 ### AAñadir el Icono
 
@@ -765,8 +765,8 @@ Agregue el icono de apoyo en el botón en **App.vue**:
 
 **Check:**
 
-<!-- ![Dapp Interface changing step 7](../images/build-dapp-interface/dapp-7.png "Dapp Interface changing step 7") -->
-<img src="../images/build-dapp-interface/dapp-7.png" alt="Dapp Interface changing step 7" />
+<!-- ![Dapp Interface changing step 7](./images/build-dapp-interface/dapp-7.png "Dapp Interface changing step 7") -->
+<img src="./images/build-dapp-interface/dapp-7.png" alt="Dapp Interface changing step 7" />
 
 ### Agregar Polkadot Avatar
 
@@ -791,7 +791,7 @@ components: {
 
 **Cheque:**
 
-![Paso 8 de cambio de interfaz Dapp](../images/build-dapp-interface/dapp-8.png "Dapp Interface changing step 8")
+![Paso 8 de cambio de interfaz Dapp](./images/build-dapp-interface/dapp-8.png "Dapp Interface changing step 8")
 
 ## Manipulación de datos para una mejor vista
 
@@ -811,7 +811,7 @@ computed: {
 
 **Cheque:**
 
-![Paso 9 de cambio de interfaz Dapp](../images/build-dapp-interface/dapp-9.png "Dapp Interface changing step 9")
+![Paso 9 de cambio de interfaz Dapp](./images/build-dapp-interface/dapp-9.png "Dapp Interface changing step 9")
 
 ## CMagia CSS
 
@@ -872,8 +872,8 @@ Embellezcamos un poco más la sección de la cuenta:
 
 </details>
 
-<!-- ![Paso 10 de cambio de interfaz Dapp](../images/build-dapp-interface/dapp-10.gif "Dapp Interface changing step 10") -->
-<img src="../images/build-dapp-interface/dapp-10.gif" alt="Dapp Interface changing step 10" />
+<!-- ![Paso 10 de cambio de interfaz Dapp](./images/build-dapp-interface/dapp-10.gif "Dapp Interface changing step 10") -->
+<img src="./images/build-dapp-interface/dapp-10.gif" alt="Dapp Interface changing step 10" />
 
 Editemos estilos para las pestañas:
 
@@ -925,8 +925,8 @@ Editemos estilos para las pestañas:
 
 </details>
 
-<!-- ![Paso 11 de cambio de interfaz Dapp](../images/build-dapp-interface/dapp-11.gif "Dapp Interface changing step 11") -->
-<img src="../images/build-dapp-interface/dapp-11.gif" alt="Dapp Interface changing step 11" />
+<!-- ![Paso 11 de cambio de interfaz Dapp](./images/build-dapp-interface/dapp-11.gif "Dapp Interface changing step 11") -->
+<img src="./images/build-dapp-interface/dapp-11.gif" alt="Dapp Interface changing step 11" />
 
 > Permítanme recordarles que el código terminado para este tutorial se encuentra en [este](https://github.com/positivecrash/wscool21-ui-dapp) repositorio. Y pasemos a los siguientes pasos :)
 
@@ -1005,8 +1005,8 @@ input.large, select.large {
 
 **Comprobemos que todo funciona bien después de las actualizaciones:**
 
-<!-- ![Paso 12 de cambio de interfaz Dapp](../images/build-dapp-interface/dapp-12.gif "Dapp Interface changing step 12") -->
-<img src="../images/build-dapp-interface/dapp-12.gif" alt="Paso 12 de cambio de interfaz Dapp" />
+<!-- ![Paso 12 de cambio de interfaz Dapp](./images/build-dapp-interface/dapp-12.gif "Dapp Interface changing step 12") -->
+<img src="./images/build-dapp-interface/dapp-12.gif" alt="Paso 12 de cambio de interfaz Dapp" />
 
 Tenemos una sección de registro de datos en todo el dapp, así que crearé un componente para él.
 
@@ -1148,15 +1148,15 @@ filters: {
 
 **Revisemos la sección de registro de datos en la pestaña Datalog:**
 
-<!-- ![Paso 13 de cambio de interfaz Dapp](../images/build-dapp-interface/dapp-13.gif "Dapp Interface changing step 13") -->
-<img src="../images/build-dapp-interface/dapp-13.gif" alt="Paso 13 de cambio de interfaz Dapp" />
+<!-- ![Paso 13 de cambio de interfaz Dapp](./images/build-dapp-interface/dapp-13.gif "Dapp Interface changing step 13") -->
+<img src="./images/build-dapp-interface/dapp-13.gif" alt="Paso 13 de cambio de interfaz Dapp" />
 
 ## Lanzamiento
 
 Para este paso, la mayoría de las mejoras ya se han hecho, solo necesitamos aplicarlas a la plantilla: Importar componentes Button y Datalog, eliminar el título excesivo:
 
-<!-- ![Paso 14 de cambio de interfaz Dapp](../images/build-dapp-interface/dapp-14.gif "Dapp Interface changing step 14") -->
-<img src="../images/build-dapp-interface/dapp-14.gif" alt="Paso 14 de cambio de interfaz Dapp" />
+<!-- ![Paso 14 de cambio de interfaz Dapp](./images/build-dapp-interface/dapp-14.gif "Dapp Interface changing step 14") -->
+<img src="./images/build-dapp-interface/dapp-14.gif" alt="Paso 14 de cambio de interfaz Dapp" />
 
 Reemplacemos el elemento de control de `select` con `checkbox`..
 
@@ -1236,8 +1236,8 @@ Escribe esto:
 
 </details>
 
-<!-- ![Paso 15 de cambio de interfaz Dapp](../images/build-dapp-interface/dapp-15.gif "Dapp Interface changing step 15") -->
-<img src="../images/build-dapp-interface/dapp-15.gif" alt="Paso 15 de cambio de interfaz Dapp" />
+<!-- ![Paso 15 de cambio de interfaz Dapp](./images/build-dapp-interface/dapp-15.gif "Dapp Interface changing step 15") -->
+<img src="./images/build-dapp-interface/dapp-15.gif" alt="Paso 15 de cambio de interfaz Dapp" />
 
 Quiero aclarar algo con la interfaz: con estos elementos arrancamos algún dispositivo. Visualicémoslo. Elegí un dron, así que alternaré las clases según `item.parameter`.
 
@@ -1315,8 +1315,8 @@ Escribe estilos para el dron en Launch.vue. No olvide el `scoped` de la etiqueta
 
 </details>
 
-<!-- ![Paso 16 de cambio de interfaz Dapp](../images/build-dapp-interface/dapp-16.gif "Dapp Interface changing step 16") -->
-<img src="../images/build-dapp-interface/dapp-16.gif" alt="Paso 16 de cambio de interfaz Dapp" />
+<!-- ![Paso 16 de cambio de interfaz Dapp](./images/build-dapp-interface/dapp-16.gif "Dapp Interface changing step 16") -->
+<img src="./images/build-dapp-interface/dapp-16.gif" alt="Paso 16 de cambio de interfaz Dapp" />
 
 Ahora agreguemos el componente **DatalogSection.vue**.
 
@@ -1367,8 +1367,8 @@ con esto:
 ```
 
 **Cheque:**
-<!-- ![Paso 17 de cambio de interfaz Dapp](../images/build-dapp-interface/dapp-17.gif "Dapp Interface changing step 17") -->
-<img src="../images/build-dapp-interface/dapp-17.gif" alt="Paso 17 de cambio de interfaz Dapp" />
+<!-- ![Paso 17 de cambio de interfaz Dapp](./images/build-dapp-interface/dapp-17.gif "Dapp Interface changing step 17") -->
+<img src="./images/build-dapp-interface/dapp-17.gif" alt="Paso 17 de cambio de interfaz Dapp" />
 
 A veces tienes algunos errores, es casi inevitable. Algo puede salir mal con la conexión o puede suceder cualquier otra cosa. Entonces tenemos alternativas con mensajes de error en todo el dapp, no los he cambiado desde el principio, en el código se ven así:
 
@@ -1378,7 +1378,7 @@ A veces tienes algunos errores, es casi inevitable. Algo puede salir mal con la 
 
 En la interfaz, los errores se ven de esta manera ahora:
 
-![Paso 18 de cambio de interfaz Dapp](../images/build-dapp-interface/dapp-18.png "Dapp Interface changing step 18")
+![Paso 18 de cambio de interfaz Dapp](./images/build-dapp-interface/dapp-18.png "Dapp Interface changing step 18")
 
 Agregue estilos para el `.error` en **app.css**:
 
@@ -1401,11 +1401,11 @@ Y arreglaré un espacio entre la sección `.tools` y otro contenido desde la par
 
 Obtendremos:
 
-![Paso 19 de cambio de interfaz Dapp](../images/build-dapp-interface/dapp-19.png "Dapp Interface changing step 19")
+![Paso 19 de cambio de interfaz Dapp](./images/build-dapp-interface/dapp-19.png "Dapp Interface changing step 19")
 
 Ahora en esta página tenemos los botones “primary”. Técnicamente está bien, pero esto no está bien según la experiencia del usuario anterior. Es mejor no utilizar más de un botón predominante en la pantalla. Así que arreglemoslo y agreguemos para el `Button` en **Launch.vue** con la propiedad `type = "secundaria"`:
 
-![Paso 20 de cambio de interfaz Dapp](../images/build-dapp-interface/dapp-20.png "Dapp Interface changing step 20")
+![Paso 20 de cambio de interfaz Dapp](./images/build-dapp-interface/dapp-20.png "Dapp Interface changing step 20")
 
 Genial, ahora solucionaré algunos problemas con mi nodo e iré al paso de demostración.
 
@@ -1424,7 +1424,7 @@ data() {
 },
 ```
 
-![Paso 21 de cambio de interfaz Dapp](../images/build-dapp-interface/dapp-21.png "Dapp Interface changing step 21")
+![Paso 21 de cambio de interfaz Dapp](./images/build-dapp-interface/dapp-21.png "Dapp Interface changing step 21")
 
 Como de costumbre, comencemos por cambiar lo que ya tenemos.
 
@@ -1475,12 +1475,12 @@ filters: {
 ```
 
 **Cheque:**
-![Paso 22 de cambio de interfaz Dapp](../images/build-dapp-interface/dapp-22.png "Dapp Interface changing step 22")
+![Paso 22 de cambio de interfaz Dapp](./images/build-dapp-interface/dapp-22.png "Dapp Interface changing step 22")
 
 Para la personalización de este ejemplo de demostración con el lanzamiento de un robot, puede proponer cualquier idea. Personalmente, comencé con esta ciudad:
 
-<!-- ![Paso 23 de cambio de interfaz Dapp](../images/build-dapp-interface/dapp-23.gif "Dapp Interface changing step 23") -->
-<img src="../images/build-dapp-interface/dapp-23.gif" alt="Paso 23 de cambio de interfaz Dapp" />
+<!-- ![Paso 23 de cambio de interfaz Dapp](./images/build-dapp-interface/dapp-23.gif "Dapp Interface changing step 23") -->
+<img src="./images/build-dapp-interface/dapp-23.gif" alt="Paso 23 de cambio de interfaz Dapp" />
 
 No mostraré el código completo para que esto no te confunda en absoluto, pero esquemáticamente habrá algo como esto:
 
@@ -1767,8 +1767,8 @@ div.demo-city-1 {
 
 **Resultado:**
 
-<!-- ![Paso 25 de cambio de interfaz Dapp](../images/build-dapp-interface/dapp-25.gif "Dapp Interface changing step 25") -->
-<img src="../images/build-dapp-interface/dapp-25.gif" alt="Paso 25 de cambio de interfaz Dapp" />
+<!-- ![Paso 25 de cambio de interfaz Dapp](./images/build-dapp-interface/dapp-25.gif "Dapp Interface changing step 25") -->
+<img src="./images/build-dapp-interface/dapp-25.gif" alt="Paso 25 de cambio de interfaz Dapp" />
 
 ## Conclusion
 

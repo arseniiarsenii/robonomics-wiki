@@ -41,5 +41,5 @@ Save changes and then reload the page with `ctrl+F5` buttons.
 
 
 
- [im1]: <../images/troubleshooting/lesson4_error.jpg>
- [im2]: <../images/troubleshooting/XCM.jpg>
+ [im1]: <./images/troubleshooting/lesson4_error.jpg>
+ [im2]: <./images/troubleshooting/XCM.jpg>

@@ -100,7 +100,7 @@ https://www.youtube.com/watch?v=yxqxBk-6bpI
 
 まず、Aira OSが起動している場合は停止し、対応するUSBデバイスを追加します。
 
-![VB USB Forwarding](../images/vb_forward_usb.jpg)
+![VB USB Forwarding](./images/vb_forward_usb.jpg)
 
 仮想マシンを起動し、SSHで接続し、仮想マシンのUSBデバイスに合わせて`comstation/port`オプションを設定します。また、`comstation`を有効にして、緯度と経度を設定します。最終的に `config/my.json` は以下のようになります。
 

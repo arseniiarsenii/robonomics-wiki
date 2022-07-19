@@ -5,9 +5,9 @@ contributors: [positivecrash, arinaml]
 translated: true
 ---
 
-<!-- ![Robonomics 및 Polkadot 위에 분산 된 애플리케이션을위한 사용자 인터페이스 구축](../images/build-dapp-interface/sum.gif "Building User Interface for Decentralized Applications, on top of Robonomics and Polkadot") -->
+<!-- ![Robonomics 및 Polkadot 위에 분산 된 애플리케이션을위한 사용자 인터페이스 구축](./images/build-dapp-interface/sum.gif "Building User Interface for Decentralized Applications, on top of Robonomics and Polkadot") -->
 
-<img alt="Robonomics 및 Polkadot 위에 분산 된 애플리케이션을위한 사용자 인터페이스 구축" src="../images/build-dapp-interface/sum.gif" />
+<img alt="Robonomics 및 Polkadot 위에 분산 된 애플리케이션을위한 사용자 인터페이스 구축" src="./images/build-dapp-interface/sum.gif" />
 
 ## 서론
 
@@ -45,7 +45,7 @@ yarn serve
 
 **브라우저에 다음 화면이 표시되어야합니다 :**
 
-![Dapp 시작](../images/build-dapp-interface/dapp-start.png "Dapp Start")
+![Dapp 시작](./images/build-dapp-interface/dapp-start.png "Dapp Start")
 
 
 <details>
@@ -53,12 +53,12 @@ yarn serve
   <summary>시작을위한 몇 가지 추가 팁</summary>
 
   - **노드가 실행 중인지** 확인합니다.:
-    ![Robonomics 노드 실행의 예](../images/build-dapp-interface/robonomics-node-launch.png "Example of running Robonomics node")
+    ![Robonomics 노드 실행의 예](./images/build-dapp-interface/robonomics-node-launch.png "Example of running Robonomics node")
 
   - **macOS**에서는 **접근 권한**`chmod + x robonomics`를 변경해야 할 수 있습니다. 
 
   - **Polkadot Extension에 대한 액세스**를 허용했는지 확인합니다 :
-    ![액세스를 제공하는 Polkadot 확장](../images/build-dapp-interface/polkadot-permission.png "Polkadot Extension giving access")
+    ![액세스를 제공하는 Polkadot 확장](./images/build-dapp-interface/polkadot-permission.png "Polkadot Extension giving access")
 
   - 실행중인 노드의 로그에 오류가 있고 dapp이 올바르게로드되지 않는 경우 dev chain의 데이터베이스를 삭제 해보십시오.`sudo rm -rf <YOUR LOCAL PATH>/robonomics/chains/dev/db/`및 재시작 노드. 도움이되지 않으면 컴퓨터를 다시 시작하십시오. 
 
@@ -116,7 +116,7 @@ UI를 변경하기 위해 dapp의 구조를 살펴보고 수정할 수있는 항
 
 **main.js** 파일을 편집하여 다음 CSS 파일을 앱으로 가져옵니다 :
 
-![Vue App에서 글로벌 CSS 가져 오기](../images/build-dapp-interface/import-css-vue-1.png "Import global CSS in Vue app")
+![Vue App에서 글로벌 CSS 가져 오기](./images/build-dapp-interface/import-css-vue-1.png "Import global CSS in Vue app")
 
 ```JS
 import './assets/styles/reset.css'
@@ -127,7 +127,7 @@ import './assets/styles/animation.css'
 
 **dapp에서 글꼴이 변경되었는지 확인하십시오 :**
 
-![Dapp 인터페이스 변경 1 단계](../images/build-dapp-interface/dapp-1.png "Dapp Interface changing step 1")
+![Dapp 인터페이스 변경 1 단계](./images/build-dapp-interface/dapp-1.png "Dapp Interface changing step 1")
 
 
 ## 레이아웃 변경 및 제목 꾸미기
@@ -230,7 +230,7 @@ body {
 - Robonomics 겨울 학교 2021 로고가있는 파일을 **./src/assets/images** 폴더에 넣으십시오.
 
 **다음 화면이 표시됩니다 :**
-![Dapp 인터페이스 변경 2 단계](../images/build-dapp-interface/dapp-2.png "Dapp Interface changing step 2")
+![Dapp 인터페이스 변경 2 단계](./images/build-dapp-interface/dapp-2.png "Dapp Interface changing step 2")
 
 ## DAPP 데이터에 따른 스타일 정의
 
@@ -414,8 +414,8 @@ const timeout = new Promise(resolve => {
 ```
 `300` 대신 `1700`을 설정하고 결과를 확인합니다 :
 
-<!-- ![Dapp 인터페이스 변경 3 단계](../images/build-dapp-interface/dapp-3.gif "Dapp Interface changing step 3") -->
-<img alt="Dapp 인터페이스 변경 3 단계" src="../images/build-dapp-interface/dapp-3.gif" />
+<!-- ![Dapp 인터페이스 변경 3 단계](./images/build-dapp-interface/dapp-3.gif "Dapp Interface changing step 3") -->
+<img alt="Dapp 인터페이스 변경 3 단계" src="./images/build-dapp-interface/dapp-3.gif" />
 
 
 ## 재사용 가능한 구성 요소 사용
@@ -490,7 +490,7 @@ export default {
 ```
 
 **결과 확인하십시오 :**
-![Dapp 인터페이스 변경 4 단계](../images/build-dapp-interface/dapp-4.png "Dapp Interface changing step 4")
+![Dapp 인터페이스 변경 4 단계](./images/build-dapp-interface/dapp-4.png "Dapp Interface changing step 4")
 
 ### 버튼 추가
 
@@ -647,12 +647,12 @@ export default {
 ```
 
 **우리는 다음과 같은 입장을 얻습니다 :**
-![Dapp 인터페이스 변경 5 단계](../images/build-dapp-interface/dapp-5.png "Dapp Interface changing step 5")
+![Dapp 인터페이스 변경 5 단계](./images/build-dapp-interface/dapp-5.png "Dapp Interface changing step 5")
 
 Button 구성 요소의 경우 `@onClick`을 사용하여 prop에서 클릭을 내보냈으므로 이제 수도꼭지 기능이 올바르게 작동하는지 확인하겠습니다 (클릭시 잔액이 변경되어야 함).
 
-<!-- ![Dapp 인터페이스 변경 6 단계](../images/build-dapp-interface/dapp-6.gif "Dapp Interface changing step 6") -->
-<img alt="Dapp 인터페이스 변경 6 단계" src="../images/build-dapp-interface/dapp-6.gif" />
+<!-- ![Dapp 인터페이스 변경 6 단계](./images/build-dapp-interface/dapp-6.gif "Dapp Interface changing step 6") -->
+<img alt="Dapp 인터페이스 변경 6 단계" src="./images/build-dapp-interface/dapp-6.gif" />
 
 ### 아이콘 추가
 
@@ -766,7 +766,7 @@ props: {
 
 **확인 :**
 
-![Dapp 인터페이스 변경 7 단계](../images/build-dapp-interface/dapp-7.png "Dapp Interface changing step 7")
+![Dapp 인터페이스 변경 7 단계](./images/build-dapp-interface/dapp-7.png "Dapp Interface changing step 7")
 
 ### Polcadot 아바타 추가
 
@@ -791,7 +791,7 @@ components: {
 
 **확인 :**
 
-![Dapp 인터페이스 변경 8 단계](../images/build-dapp-interface/dapp-8.png "Dapp Interface changing step 8")
+![Dapp 인터페이스 변경 8 단계](./images/build-dapp-interface/dapp-8.png "Dapp Interface changing step 8")
 
 ## 더 나은보기를위한 데이터 조작
 
@@ -811,7 +811,7 @@ computed: {
 
 **확인 :**
 
-![Dapp 인터페이스 변경 9 단계](../images/build-dapp-interface/dapp-9.png "Dapp Interface changing step 9")
+![Dapp 인터페이스 변경 9 단계](./images/build-dapp-interface/dapp-9.png "Dapp Interface changing step 9")
 
 ## CSS magic
 
@@ -872,8 +872,8 @@ computed: {
 
 </details>
 
-<!-- ![Dapp 인터페이스 변경 10 단계](../images/build-dapp-interface/dapp-10.gif "Dapp Interface changing step 10") -->
-<img alt="Dapp 인터페이스 변경 10 단계" src="../images/build-dapp-interface/dapp-10.gif" />
+<!-- ![Dapp 인터페이스 변경 10 단계](./images/build-dapp-interface/dapp-10.gif "Dapp Interface changing step 10") -->
+<img alt="Dapp 인터페이스 변경 10 단계" src="./images/build-dapp-interface/dapp-10.gif" />
 
 탭의 스타일을 편집 해 보겠습니다.
 
@@ -925,8 +925,8 @@ computed: {
 
 </details>
 
-<!-- ![Dapp 인터페이스 변경 11 단계](../images/build-dapp-interface/dapp-11.gif "Dapp Interface changing step 11") -->
-<img alt="Dapp 인터페이스 변경 11 단계" src="../images/build-dapp-interface/dapp-11.gif" />
+<!-- ![Dapp 인터페이스 변경 11 단계](./images/build-dapp-interface/dapp-11.gif "Dapp Interface changing step 11") -->
+<img alt="Dapp 인터페이스 변경 11 단계" src="./images/build-dapp-interface/dapp-11.gif" />
 
 > 이 튜토리얼의 완성 된 코드가이 [저장소에 있음을](https://github.com/positivecrash/wscool21-ui-dapp) 상기시켜 드리겠습니다. 다음 단계로 이동하겠습니다 :)
 
@@ -1006,8 +1006,8 @@ input.large, select.large {
 
 **업데이트 후 모든 것이 잘 작동하는지 확인합시다 :**
 
-<!-- ![Dapp 인터페이스 변경 12 단계](../images/build-dapp-interface/dapp-12.gif "Dapp Interface changing step 12") -->
-<img alt="Dapp 인터페이스 변경 12 단계" src="../images/build-dapp-interface/dapp-12.gif" />
+<!-- ![Dapp 인터페이스 변경 12 단계](./images/build-dapp-interface/dapp-12.gif "Dapp Interface changing step 12") -->
+<img alt="Dapp 인터페이스 변경 12 단계" src="./images/build-dapp-interface/dapp-12.gif" />
 
 dapp 전체에 데이터 로그 섹션이 있으므로 구성 요소를 만들겠습니다
 
@@ -1149,15 +1149,15 @@ filters: {
 
 **데이터 로그 탭에서 데이터 로그 섹션을 확인해 보겠습니다 :**
 
-<!-- ![Dapp 인터페이스 변경 13 단계](../images/build-dapp-interface/dapp-13.gif "Dapp Interface changing step 13") -->
-<img alt="Dapp 인터페이스 변경 13 단계" src="../images/build-dapp-interface/dapp-13.gif" />
+<!-- ![Dapp 인터페이스 변경 13 단계](./images/build-dapp-interface/dapp-13.gif "Dapp Interface changing step 13") -->
+<img alt="Dapp 인터페이스 변경 13 단계" src="./images/build-dapp-interface/dapp-13.gif" />
 
 ## 시작
 
 이 단계에서는 대부분의 개선이 이미 완료되었으므로 템플릿에 적용하기 만하면됩니다. Import Button 및 Datalog 구성 요소는 과도한 제목을 제거합니다 :
 
-<!-- ![Dapp 인터페이스 변경 14 단계](../images/build-dapp-interface/dapp-14.gif "Dapp Interface changing step 14") -->
-<img alt="Dapp 인터페이스 변경 14 단계" src="../images/build-dapp-interface/dapp-14.gif" />
+<!-- ![Dapp 인터페이스 변경 14 단계](./images/build-dapp-interface/dapp-14.gif "Dapp Interface changing step 14") -->
+<img alt="Dapp 인터페이스 변경 14 단계" src="./images/build-dapp-interface/dapp-14.gif" />
 
 `선택` `컨트롤` 요소를 확인란으로 대체하겠습니다 :
 
@@ -1237,8 +1237,8 @@ filters: {
 
 </details>
 
-<!-- ![Dapp 인터페이스 변경 15 단계](../images/build-dapp-interface/dapp-15.gif "Dapp Interface changing step 15") -->
-<img alt="Dapp 인터페이스 변경 15 단계" src="../images/build-dapp-interface/dapp-15.gif" />
+<!-- ![Dapp 인터페이스 변경 15 단계](./images/build-dapp-interface/dapp-15.gif "Dapp Interface changing step 15") -->
+<img alt="Dapp 인터페이스 변경 15 단계" src="./images/build-dapp-interface/dapp-15.gif" />
 
 인터페이스에 대해 명확히하고 싶습니다. 이러한 요소를 사용하여 일부 장치를 시작합니다. 시각화 해 봅시다. 드론을 선택 했으므로 `item.parameter`에 따라 클래스를 전환하겠습니다.
 
@@ -1316,8 +1316,8 @@ methods: {
 
 </details>
 
-<!-- ![Dapp Interface changing step 16](../images/build-dapp-interface/dapp-16.gif "Dapp Interface changing step 16") -->
-<img alt="Dapp 인터페이스 변경 16 단계" src="../images/build-dapp-interface/dapp-16.gif" />
+<!-- ![Dapp Interface changing step 16](./images/build-dapp-interface/dapp-16.gif "Dapp Interface changing step 16") -->
+<img alt="Dapp 인터페이스 변경 16 단계" src="./images/build-dapp-interface/dapp-16.gif" />
 
 이제 **DatalogSection.vue** 구성 요소를 추가하겠습니다.
 
@@ -1368,8 +1368,8 @@ this.log.push([new Date().toLocaleString(), {
 ```
 
 **확인 :**
-<!-- ![Dapp 인터페이스 변경 17 단계](../images/build-dapp-interface/dapp-17.gif "Dapp Interface changing step 17") -->
-<img alt="Dapp 인터페이스 변경 17 단계" src="../images/build-dapp-interface/dapp-17.gif" />
+<!-- ![Dapp 인터페이스 변경 17 단계](./images/build-dapp-interface/dapp-17.gif "Dapp Interface changing step 17") -->
+<img alt="Dapp 인터페이스 변경 17 단계" src="./images/build-dapp-interface/dapp-17.gif" />
 
 때로는 약간의 오류가 발생하지만 거의 불가피합니다. 연결에 문제가 생기거나 다른 일이 발생할 수 있습니다. 그래서 우리는 dapp을 통해 오류 메시지와 함께 폴백을 가지고 있으며, 코드는 다음과 같이 처음부터 변경하지 않았습니다 :
 
@@ -1379,7 +1379,7 @@ this.log.push([new Date().toLocaleString(), {
 
 인터페이스에서 오류는 다음과 같이 보입니다 :
 
-![Dapp 인터페이스 변경 18 단계](../images/build-dapp-interface/dapp-18.png "Dapp Interface changing step 18")
+![Dapp 인터페이스 변경 18 단계](./images/build-dapp-interface/dapp-18.png "Dapp Interface changing step 18")
 
 **app.css**에서 `.error`에 대한 스타일을 추가합니다 :
 
@@ -1402,11 +1402,11 @@ this.log.push([new Date().toLocaleString(), {
 
 결과는 :
 
-![Dapp 인터페이스 변경 19 단계](../images/build-dapp-interface/dapp-19.png "Dapp Interface changing step 19")
+![Dapp 인터페이스 변경 19 단계](./images/build-dapp-interface/dapp-19.png "Dapp Interface changing step 19")
 
 이제이 페이지에서 "기본"버튼이 필요합니다. 기술적으로는 괜찮지 만 위의 사용자 경험으로는 괜찮지 않습니다. 화면에서 하나 이상의 일반적인 버튼을 사용하지 않는 것이 좋습니다. 따라서이를 수정하고 속성 `type = "secondary"`로 **Launch.vue**에 `Button`을 추가해 보겠습니다. 
 
-![Dapp 인터페이스 변경 20 단계](../images/build-dapp-interface/dapp-20.png "Dapp Interface changing step 20")
+![Dapp 인터페이스 변경 20 단계](./images/build-dapp-interface/dapp-20.png "Dapp Interface changing step 20")
 
 좋습니다. 이제 노드의 일부 문제를 수정하고 데모 단계로 이동하겠습니다.
 
@@ -1425,7 +1425,7 @@ data() {
 },
 ```
 
-![Dapp 인터페이스 변경 21 단계](../images/build-dapp-interface/dapp-21.png "Dapp Interface changing step 21")
+![Dapp 인터페이스 변경 21 단계](./images/build-dapp-interface/dapp-21.png "Dapp Interface changing step 21")
 
 평소처럼 이미 가지고있는 것을 변경하는 것부터 시작합시다.
 
@@ -1476,12 +1476,12 @@ filters: {
 ```
 
 **확인:**
-![Dapp 인터페이스 변경 22 단계](../images/build-dapp-interface/dapp-22.png "Dapp Interface changing step 22")
+![Dapp 인터페이스 변경 22 단계](./images/build-dapp-interface/dapp-22.png "Dapp Interface changing step 22")
 
 로봇을 시작하여이 데모 예제를 사용자 정의하려면 아이디어를 자유롭게 생각해 낼 수 있습니다. 개인적으로 저는이 도시에서 시작했습니다 :
 
-<!-- ![Dapp 인터페이스 변경 23 단계](../images/build-dapp-interface/dapp-23.gif "Dapp Interface changing step 23") -->
-<img alt="Dapp 인터페이스 변경 23 단계" src="../images/build-dapp-interface/dapp-23.gif" />
+<!-- ![Dapp 인터페이스 변경 23 단계](./images/build-dapp-interface/dapp-23.gif "Dapp Interface changing step 23") -->
+<img alt="Dapp 인터페이스 변경 23 단계" src="./images/build-dapp-interface/dapp-23.gif" />
 
 혼동하지 않도록 전체 코드를 보여주지는 않겠지 만 개략적으로 다음과 같은 내용이있을 것입니다 :
 
@@ -1768,8 +1768,8 @@ div.demo-city-1 {
 
 **결과:**
 
-<!-- ![Dapp 인터페이스 변경 25 단계](../images/build-dapp-interface/dapp-25.gif "Dapp Interface changing step 25") -->
-<img alt="Dapp 인터페이스 변경 25 단계" src="../images/build-dapp-interface/dapp-25.gif" />
+<!-- ![Dapp 인터페이스 변경 25 단계](./images/build-dapp-interface/dapp-25.gif "Dapp Interface changing step 25") -->
+<img alt="Dapp 인터페이스 변경 25 단계" src="./images/build-dapp-interface/dapp-25.gif" />
 
 ## 결론
 

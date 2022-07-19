@@ -18,20 +18,20 @@ Air quality is not a topic of the article, you may find more about it at WHO's w
 We connect PMS3003 TXD PIN5 to ESP32 DevKitC IO17 to transfer measurements by UART.
 Also both devices require power and common ground.
 
-![Wiring Diagram](../images/freertos-mqtt/wiring.png)
+![Wiring Diagram](./images/freertos-mqtt/wiring.png)
 
 ## Data Flow
 
 In order to deliver sensor measurements to Robonomics network, on a firmware level our goal is to get data from a sensor by embedded communication protocol it supports (UART in our case) and pass it to AIRA instance by MQTT / TCP.
 
-![Sending](../images/freertos-mqtt/send.svg)
+![Sending](./images/freertos-mqtt/send.svg)
 
 In our example we use AIRA cloud deployment available by public IP address and domain name assigned.
 On AIRA instance we setup `mosquitto` MQTT broker and subscribe to `/freertos_mqtt_robonomics_example/98:F4:AB:72:23:C4` topic to get messages from MQTT.
 
 Then we pass messages to `robonomics io` writer by pipe.
 
-![Receiving](../images/freertos-mqtt/recv.svg)
+![Receiving](./images/freertos-mqtt/recv.svg)
 
 Now data available in Robonomics Network and we can be read it with `robonomics io` again.
 
@@ -58,7 +58,7 @@ idf.py menuconfig
 
 Then we set Wi-Fi access point SSID and password in `Example Connection Configuration` section.
 
-![Menuconfig Wi-Fi](../images/freertos-mqtt/menuconfig-wi-fi.png)
+![Menuconfig Wi-Fi](./images/freertos-mqtt/menuconfig-wi-fi.png)
 
 ### MQTT Endpoint Configuration
 
@@ -73,7 +73,7 @@ idf.py menuconfig
 
 Set `Broker URL` in `Example Configuration` section.
 
-![Menuconfig MQTT](../images/freertos-mqtt/menuconfig-mqtt.png)
+![Menuconfig MQTT](./images/freertos-mqtt/menuconfig-mqtt.png)
 
 The second thing is a MQTT topic.
 We set it in the firmware with the project name prefix followed with our ESP32 MAC address.

@@ -58,6 +58,6 @@ Go to **Settings -> Developer** and put next lines:
 
 
 
-[im1]: <../images/troubleshooting/lesson4_error.jpg>
-[im2]: <../images/troubleshooting/XCM.jpg>
-[im3]: <../images/troubleshooting/transfer.jpg>
+[im1]: <./images/troubleshooting/lesson4_error.jpg>
+[im2]: <./images/troubleshooting/XCM.jpg>
+[im3]: <./images/troubleshooting/transfer.jpg>

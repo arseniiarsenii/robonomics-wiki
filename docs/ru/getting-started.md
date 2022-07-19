@@ -11,7 +11,7 @@ translated: true
 
 Узнайте больше в документе ["Robonomics whitepaper"](https://github.com/airalab/robonomics_specs/blob/master/pdf/whitepaper_ru.pdf) на русском.
 
-![Сценарий сети Робономика](../images/robonomics_network_basic_scheme_ru.jpg "Сценарий сети Робономика")
+![Сценарий сети Робономика](./images/robonomics_network_basic_scheme_ru.jpg "Сценарий сети Робономика")
 
 *Схема работы сети Робономика*
 

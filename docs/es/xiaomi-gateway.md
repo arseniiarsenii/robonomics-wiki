@@ -19,15 +19,15 @@ http://<raspberry_address>:8123
 ```
 Go to `Configuration/Integrations` and press `Add Intagration`. There you need to Find `Xiaomi Miio`:
 
-![integration](../images/home-assistant/integration.png)
+![integration](./images/home-assistant/integration.png)
 
 Then fill your username (or phone) and password from Mi Home account and choose your country server:
 
-![auth](../images/home-assistant/auth.png)
+![auth](./images/home-assistant/auth.png)
 
 Press `Submit` and choose your Hub (Aqara Hub in this example):
 
-![hub](../images/home-assistant/hub.png)
+![hub](./images/home-assistant/hub.png)
 
 Press `Submit` and you will be able to see your gateway in Integrations page.
 
@@ -37,7 +37,7 @@ You can also connect your hub to Aqara Home app on ios and then add it to Home A
 
 Add your hub to the app using `add device` or `+` button. Right after your hub added to Aqara Home app you will be proposed to bind it with your Homekit account. 
 
-![homekit](../images/home-assistant/homekit.png)
+![homekit](./images/home-assistant/homekit.png)
 
 When you see a menu like the picture, open your Home Assistant page:
 
@@ -46,8 +46,8 @@ http://<raspberry_address>:8123
 ```
 Go to `Configuration/Integrations`. Here you can find your device discovered and click `Configure` button to add it by Homekit Controller integration. You have to enter pairing code of your device, which you can find on the sticker on your device.
 
-![configure1](../images/home-assistant/configure1.png)
+![configure1](./images/home-assistant/configure1.png)
 
-![configure2](../images/home-assistant/configure2.png)
+![configure2](./images/home-assistant/configure2.png)
 
 After that you can connect your devices to Robonomics with this [instruction](/docs/add-smart-device-to-robonomics).

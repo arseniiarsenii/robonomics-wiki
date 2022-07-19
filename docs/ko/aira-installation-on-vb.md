@@ -45,17 +45,17 @@ Also VirtualBox may show a warning about `Display settings`. Consider switching 
 
 Open VirtualBox and press `Ctrl+I` or go to `File > Import Applicance...`
 
-![AIRA import VB image](../images/aira-installation/aira_import_vb_image.jpg "AIRA import VB image")
+![AIRA import VB image](./images/aira-installation/aira_import_vb_image.jpg "AIRA import VB image")
 
 At this moment the next step is not necessary but it will help you to connect to the VM via SSH easily.
 
 First add `Host-Only` adapter in VirtualBox menu `File > Host Network Manager...` or by pressing `Ctrl+H`
 
-![Host Only](../images/aira-installation/host_only_adapter.jpg "Host Only")
+![Host Only](./images/aira-installation/host_only_adapter.jpg "Host Only")
 
 Then go to the image's settings, Network and add the second network adapter
 
-![Second adapter](../images/aira-installation/add_second_adapter.jpg "Second adapter")
+![Second adapter](./images/aira-installation/add_second_adapter.jpg "Second adapter")
 
 For more details look at the standalone [lesson](/docs/aira-connecting-via-ssh/).
 
@@ -65,7 +65,7 @@ Optionally you can increase the amount of video memory and switch `Graphics Cont
 
 Finally press Start and you'll see AIRA welcoming you with generated Ethereum address and IPFS identifier
 
-![AIRA image ready, Welcome screen](../images/aira-installation/aira_image_ready.jpg "AIRA image ready, Welcome screen")
+![AIRA image ready, Welcome screen](./images/aira-installation/aira_image_ready.jpg "AIRA image ready, Welcome screen")
 
 At the very first initialization AIRA generates new Ethereum address and IPNS identifier for you.
 

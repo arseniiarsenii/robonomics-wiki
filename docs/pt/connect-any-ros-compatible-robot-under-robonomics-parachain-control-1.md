@@ -18,7 +18,7 @@ https://www.youtube.com/watch?v=fDpwhBasQ5o&feature=youtu.be
 ## 1. Find a simulation
 Let's surf the web. Google for `ROS drone simulator`. The first link will mostly likely show you the `tum_simulator` page on [http://wiki.ros.org/tum_simulator](http://wiki.ros.org/tum_simulator)
 
-![tum_simulator](../images/drone-demo/tum_simulator.jpg "tum_simulator")
+![tum_simulator](./images/drone-demo/tum_simulator.jpg "tum_simulator")
 
 It's pretty outdated, so we better find a fork for our system. Google for `tum_simulator Ubuntu 18 Gazebo 9 fork`. The first result is a GitHub [repo](https://github.com/tahsinkose/sjtu-drone) with an appropriate package. Dowload it
 ```
@@ -50,7 +50,7 @@ rostopic info /drone/takeoff
 rostopic info /drone/land
 ```
 
-![topics_info](../images/drone-demo/topics_info.jpg "topics_info")
+![topics_info](./images/drone-demo/topics_info.jpg "topics_info")
 
 As may be seen, there should be messages of `Twist` and `Empty` types, they are parts of `std_msgs` and `geometry_msgs`, we'll use this in the controller. Shut the simulation for a while.
 ## 3. Download controller package
@@ -75,7 +75,7 @@ rm -rf /home/$USER/.local/share/robonomics/chains/dev/db
 ```
 After a successful launch create accounts following [this](/docs/create-account-in-dapp) manual. **Do not forget to save each account's seed and address! You will need them for transactions**. Add these addresses, seeds and path to robonomics binary file to file `config.config` in `robonomics_ws/src/robonomics_sample_controller/src`. Transfer some money (units) to these accounts:
 
-![balances](../images/drone-demo/balances.jpg "balances")
+![balances](./images/drone-demo/balances.jpg "balances")
 ## 5. Launching the drone under parachain control
 Up to now the **only thing running** should be the robonomics local node. In a separate terminal launch drone simulation:
 ```
@@ -86,7 +86,7 @@ Run the script:
 rosrun drone_simulator_controller drone_sample_controller.py
 ```
 
-![launched_drone](../images/drone-demo/launched_drone.jpg "launched_drone")
+![launched_drone](./images/drone-demo/launched_drone.jpg "launched_drone")
 
 Now you can send a transaction triggering the drone to start flying. To do so, you should use the Robonomics IO `write` subcommand of robonomics binary file:
 ```
@@ -95,6 +95,6 @@ echo "ON" | ./robonomics io write launch -r <DRONE_ADDRESS> -s <EMPLOYER’S_KEY
 Where `<DRONE_ADDRESS>`  and `<EMPLOYER’S_KEY>` are replaced with  previously saved strings accordingly.
 You should see the log `"Taking Off"` and the drone should start flying:
 
-![flying](../images/drone-demo/flying.jpg "flying")
+![flying](./images/drone-demo/flying.jpg "flying")
 
 That's how any ROS-compatible robot can be controlled by Robonomics parachain control. Proceed to [part 2](/docs/connect-any-ros-compatible-robot-under-robonomics-parachain-control-2) to learn more

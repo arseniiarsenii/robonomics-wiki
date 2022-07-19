@@ -48,7 +48,7 @@ Don't forget to add source command to `~/.bashrc`
 ```shell
 roslaunch curiosity_mars_rover_description main_real_mars.launch
 ```
-![Mars rover](../images/curiosity-demo/rover.jpg?raw=true "Mars rover")
+![Mars rover](./images/curiosity-demo/rover.jpg?raw=true "Mars rover")
 
 Note: if the image is dark, e.g. shadowed, change `Camera` to `Orthorgraphic` in Gazebo toolbar.
 The simulation can be closed for a while.
@@ -75,12 +75,12 @@ Since we are testing, let us create a local robonomics network with robonomics b
 ./robonomics --dev --tmp
 ```
 
-![Running node](../images/curiosity-demo/robonomics.jpg?raw=true "Running node")
+![Running node](./images/curiosity-demo/robonomics.jpg?raw=true "Running node")
 
 
 Go to [Robonomics Parachain portal](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkusama.rpc.robonomics.network%2F#/) and switch to local node 
 
-![Local node](../images/curiosity-demo/local_node.jpg?raw=true "Local node")
+![Local node](./images/curiosity-demo/local_node.jpg?raw=true "Local node")
 
 
 Go to Accounts and create **CURIOSITY** and **EMPLOYER** accounts.
@@ -88,7 +88,7 @@ Go to Accounts and create **CURIOSITY** and **EMPLOYER** accounts.
 **Important**! Copy each account's address (to copy address click on account's icon) and Curiosity's account **mnemonic seed** (obtained while creating the account)
 Transfer some money (units) to these accounts. You can read more about accounts in Robonomics [here](https://wiki.robonomics.network/docs/en/create-account-in-dapp/)
 
-![Account creation](../images/curiosity-demo/account_creation.jpg?raw=true "Account creation")
+![Account creation](./images/curiosity-demo/account_creation.jpg?raw=true "Account creation")
 
 
 Add these addresses, seed and node address (defaults to `ws://127.0.0.1:9944` for developer node) in `config.config` in `robonomics_ws/src/robonomics_sample_controller/src`. No quotes.
@@ -116,29 +116,29 @@ In another terminal launch the controller:
 ```shell
 rosrun robonomics_sample_controller sample_controller.py
 ```
-![Controller](../images/curiosity-demo/controller.jpg?raw=true "Controller")
+![Controller](./images/curiosity-demo/controller.jpg?raw=true "Controller")
 
 
 Now you can send a transaction triggering the Rover to start moving and collecting data. To do so, you can use the same [Robonomics Parachain portal](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkusama.rpc.robonomics.network%2F#/).
 Go to `Developer->Extrinsics` and select Curiosity's employer account, `launch` extrinsic, Curiosity's account as a target account and `yes` as a parameter.
 Submit the extrinsic.
 
-![Extrinsic](../images/curiosity-demo/extrinsic.jpg?raw=true "Extrinsic")
+![Extrinsic](./images/curiosity-demo/extrinsic.jpg?raw=true "Extrinsic")
 
 
 The robot should start moving. It won't accept commands from other accounts neither commands with `no` parameter. The rover will move around and collect data for about a minute.
 Later, when the job is done:
 
-![Job done](../images/curiosity-demo/job_done.jpg?raw=true "Job done")
+![Job done](./images/curiosity-demo/job_done.jpg?raw=true "Job done")
 
 
 On the Robonomics portal go to `Developer -> Chain state` and obtain a `CURIOSITY` datalog using “+” button with selected `datalog -> RingBufferItem` as query: 
 
-![Datalog](../images/curiosity-demo/datalog.jpg?raw=true "Datalog")
+![Datalog](./images/curiosity-demo/datalog.jpg?raw=true "Datalog")
 
 Now the IPFS hash of the telemetry is saved in the blockchain. To see the data simply copy the hash and find it on a gateway:
 
-![Data in IPFS](../images/curiosity-demo/data_in_ipfs.jpg?raw=true "Data in IPFS")
+![Data in IPFS](./images/curiosity-demo/data_in_ipfs.jpg?raw=true "Data in IPFS")
 
 
 This telemetry is kept in a decentralized storage, and it's hash is stored in a blockchain!

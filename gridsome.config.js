@@ -67,7 +67,7 @@ module.exports = {
       .use('vue-svg-loader')
       .loader('vue-svg-loader')
 
-    config.resolve.alias.set('@imagesMarkdown', '/docs/images')
+    config.resolve.alias.set('@imagesMarkdown', '/docs')
     config.resolve.alias.set('@images', '@/assets/images')
 
     config.mode('development')

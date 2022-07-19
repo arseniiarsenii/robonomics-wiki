@@ -477,4 +477,4 @@ To do this, you can connect to any existing server via ssh and run the following
 ```
 $ journalctl -u robonomics.service -f
 ```
-![Robonomics Chart](../images/robonomics-test-network-manual/result-journalctl.jpg "Robonomics Network journalctl stdout")
+![Robonomics Chart](./images/robonomics-test-network-manual/result-journalctl.jpg "Robonomics Network journalctl stdout")

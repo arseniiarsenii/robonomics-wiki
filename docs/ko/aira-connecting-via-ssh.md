@@ -17,7 +17,7 @@ https://www.youtube.com/embed/R6waDG5iwm0
 
 Go to `File` -> `Host Network Manager...` or press `Ctrl+H`
 
-![VirtualBox Network Manager](../images/virtualbox_network_manager.png "VirtualBox Network Manager")
+![VirtualBox Network Manager](./images/virtualbox_network_manager.png "VirtualBox Network Manager")
 
 Click `Create` button.
 
@@ -25,7 +25,7 @@ Click `Create` button.
 
 Select imported VM and click `Settings`. Go to `Network` tab and enable the second adapter
 
-![Add Second Adapter](../images/add_second_adapter_to_vm.png "Add Second Adapter")
+![Add Second Adapter](./images/add_second_adapter_to_vm.png "Add Second Adapter")
 
 ## Populate Authorized Keys
 

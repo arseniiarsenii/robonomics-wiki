@@ -16,7 +16,7 @@ Ensure you have Rust and the support software installed. The Rust installer will
   # from https://rustup.rs instead
   source $HOME/.cargo/env
 ```
-![Install Rust](../images/how-to-build-collator-node/install_rust.jpg)
+![Install Rust](./images/how-to-build-collator-node/install_rust.jpg)
 
 
 Install the required nightly toolchain and wasm target.
@@ -25,7 +25,7 @@ Next commands actual for Robonomics v1.4.0:
 ```
   rustup install nightly-2021-11-02
 ```
-![Install nightly](../images/how-to-build-collator-node/install_nightly.jpg)
+![Install nightly](./images/how-to-build-collator-node/install_nightly.jpg)
 
 
 ```
@@ -57,8 +57,8 @@ Now you can install the robonomics node from git source.
 ```
   cargo install --force --git https://github.com/airalab/robonomics --tag v1.4.0 robonomics-node
 ```
-![Start build Robonomics](../images/how-to-build-collator-node/start_build_robonomics.jpg)
-![End build Robonomics](../images/how-to-build-collator-node/end_build_robonomics.jpg)
+![Start build Robonomics](./images/how-to-build-collator-node/start_build_robonomics.jpg)
+![End build Robonomics](./images/how-to-build-collator-node/end_build_robonomics.jpg)
 
 
 After this command the compiled robonomics binary will be in `~/.cargo/bin` directory.

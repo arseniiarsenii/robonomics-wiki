@@ -49,7 +49,7 @@ export default {
 
   data(){
     return {
-      picture: require(`!!assets-loader!@imagesMarkdown/${this.src}`)
+      picture: require(`!!assets-loader!/docs/${this.$store.state.locale}/images/${this.src}`)
     }
   },
 

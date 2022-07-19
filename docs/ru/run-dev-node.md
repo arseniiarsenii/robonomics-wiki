@@ -27,7 +27,7 @@ chmod +x robonomics
 ```
 Вы увидите следующее:
 
-![robonomics](../images/dev-node/robonomics.png)
+![robonomics](./images/dev-node/robonomics.png)
 
 ## Получите токены
 
@@ -35,18 +35,18 @@ chmod +x robonomics
 
 Измените сеть на `Local Node` в верхнем левом углу и нажмите `Switch`.
 
-![локальная нода](../images/dev-node/portal.png)
+![локальная нода](./images/dev-node/portal.png)
 
 Затем перейдите в `Accounts`:
 
-![аккаунты](../images/dev-node/accs.png)
+![аккаунты](./images/dev-node/accs.png)
 
 Вы можете создать новый аккаунт, нажав `Add Account`.
 
-![добавить аккаунт](../images/dev-node/add_acc.png)
+![добавить аккаунт](./images/dev-node/add_acc.png)
 
 Не забудьте сохранить сид-фразу в надежном месте.
 
 Используйте один из существующих аккаунтов для отправки токенов на Ваш новый аккаунт. Выберите, к примеру, Alice, и нажмите `Send`. Затем выберите Ваш новый аккаунт, введите количество токенов для отправки и нажмите `Make Transfer`:
 
-![отправить](../images/dev-node/send.png)
+![отправить](./images/dev-node/send.png)

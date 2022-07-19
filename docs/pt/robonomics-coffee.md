@@ -29,7 +29,7 @@ system, where all the processes are happening. The single-board (Raspberry Pi 4)
 coffee machine via jumper breadboard wires and GPIO interface. RPI is also the one interacting with Robonomics and
 Statemine parachains. Sample flowchart of the workflow is presented below.
 
-![Workflow](../images/robonomics-coffee/workflow.png)
+![Workflow](./images/robonomics-coffee/workflow.png)
 
 ## Tutorial
 
@@ -59,17 +59,17 @@ There is a [sample tutorial](https://www.youtube.com/watch?v=7Y5NCePD0PM)
 on YouTube. Your goal is to remove the front panel (it won't be used anymore, so this is a thing to improve to hide all
 the wires) and detach the control PCB.
 
-![Detached PCB](../images/robonomics-coffee/detached_pcb.png)
+![Detached PCB](./images/robonomics-coffee/detached_pcb.png)
 
 #### 2. Solder two wires to the button you need.
 Solder them to the isolated contacts (in our case - two bottom contacts).
 You can use any wires, but keep im mind that in the end there should be an M-wire to put it into the breadboard.
 
-![Soldered Wires](../images/robonomics-coffee/soldered_wires.png)
+![Soldered Wires](./images/robonomics-coffee/soldered_wires.png)
 
 #### 3. Assemble the entire coffee machine back leaving the front panel removed.
 
-![Coffee machine Overview](../images/robonomics-coffee/coffee_machine_overview.png)
+![Coffee machine Overview](./images/robonomics-coffee/coffee_machine_overview.png)
 
 #### 4. Circuit  
 Overall circuit is presented below, this is a very simple transistor switch, we used **R<sub>1</sub>**=1k&Omega;, a npn 
@@ -77,16 +77,16 @@ transistor **Q<sub>1</sub>** (*h<sub>fe</sub>*=40, *U<sub>ce</sub>*>5V, *I<sub>c
 transistor suites, since this is a switch) and a small 3.3V diode **D** in base circuit found in the storage of our lab:) One 
 can use a MOSFET transistor as well.
 
-![Circuit](../images/robonomics-coffee/circuit.png)
+![Circuit](./images/robonomics-coffee/circuit.png)
 
-![Circuit Assembled](../images/robonomics-coffee/circuit_assembled.png)
+![Circuit Assembled](./images/robonomics-coffee/circuit_assembled.png)
 
 #### 5. Connect coffee machine and RPI
 Connect wires marked as *RPI GND* and *RPI GPIO Pin* to pins **GND** and **21** respectively. RPI GPIO scheme is presented below.
 Wires marked as *Button+* and *Button-* should be connected to the left button contact and right button contact 
 respectively.
 
-![RPI GPIO](../images/robonomics-coffee/rpi_gpio.png)
+![RPI GPIO](./images/robonomics-coffee/rpi_gpio.png)
 
 ### Software installation
 Time to turn the Raspberry Pi into blockchain-powered coffee maker!  
@@ -115,7 +115,7 @@ pip3 install -r requirements.txt
 On your PC install [Polkadot Extension](https://polkadot.js.org/extension/) and register a coffee machine account there. **Save 
 mnemonic seed phrase as it is going to be used later.**
 
-![Coffee machine Account](../images/robonomics-coffee/account.png)
+![Coffee machine Account](./images/robonomics-coffee/account.png)
 
 Logging actions in Robonomics is optional, you will need XRT on 
 [Robonomics Parachain portal](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkusama.rpc.robonomics.network%2F#/) for coffee machine account (it is the same across
@@ -128,7 +128,7 @@ python3 main.py <previously saved seed in quotes>
 ```
 You should see the program waiting for ACT incomes:
 
-![Waiting for ACT](../images/robonomics-coffee/waiting_for_act.png)
+![Waiting for ACT](./images/robonomics-coffee/waiting_for_act.png)
 
 You can send tokens from another account created the same way via `assets:transfer` *extrinsic* on 
 [Statemine](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkusama-statemine-rpc.paritytech.net#/explorer).
@@ -137,9 +137,9 @@ As soon as there is an income (positive change in `assets:account` *storage func
 derived from seed and for token id `3077`) the RPI triggers GPIO pin 18 and coffee machine starts making coffee and 
 records a datalog!
 
-![Making coffee](../images/robonomics-coffee/making_coffee.png)
+![Making coffee](./images/robonomics-coffee/making_coffee.png)
 
-![Recorded Datalog](../images/robonomics-coffee/datalog.png)
+![Recorded Datalog](./images/robonomics-coffee/datalog.png)
 
 ## Things to point out
 - This is a POC of a blockchain-driven IoT device, it has things to improve, wires to hide and functionality to implement.
@@ -149,7 +149,7 @@ existing one or newly created. To create one, go to
 [Statemine Kusama parachain page](https://github.com/airalab/robonomics-wiki), `Network -> Assets -> Create`.
 Set an ID there, complete the procedure and paste ID in the code.
 
-![Creating Any Token for Paying](../images/robonomics-coffee/create_token.png)
+![Creating Any Token for Paying](./images/robonomics-coffee/create_token.png)
 
 
 - Right now the only thing that matters for income tracker is the positive difference between current and previous

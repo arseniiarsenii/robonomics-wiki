@@ -451,39 +451,39 @@ The last step is to connect Prometheus as a Data Source in Grafana. For purpose 
 At the beginning we must add to Grafana new _**Data Source**_ which in our case will be Prometheus server.
 Go to Data Source:
 
->![DataSource](../images/prometheus-grafana/grafana-6-2020-09-15-19-18-50-Window.png)
+>![DataSource](./images/prometheus-grafana/grafana-6-2020-09-15-19-18-50-Window.png)
 
 Then click **_Add data source_**
 
->![DataSource](../images/prometheus-grafana/grafana-7-2020-09-15-19-18-50-Window.png)
+>![DataSource](./images/prometheus-grafana/grafana-7-2020-09-15-19-18-50-Window.png)
 
 Next select _**Prometheus**_
 
->![DataSource](../images/prometheus-grafana/grafana-8-2020-09-15-19-18-50-Window.png)
+>![DataSource](./images/prometheus-grafana/grafana-8-2020-09-15-19-18-50-Window.png)
 
 In new screen put your **_Prometheus server IP adress with 9090 port_**
 
-> ![DataSource](../images/prometheus-grafana/grafana-9-2020-09-15-19-18-50-Window.png)
+> ![DataSource](./images/prometheus-grafana/grafana-9-2020-09-15-19-18-50-Window.png)
 
 After that _**Save & Test**_ if you did all steps you should be green and ready to go for importing dashboard. On the main site click to **+** and then **Import** as shown on the pic below:
 
-> ![Import dashboard](../images/prometheus-grafana/grafana-1-2020-09-15-19-18-50-Window.png)
+> ![Import dashboard](./images/prometheus-grafana/grafana-1-2020-09-15-19-18-50-Window.png)
 
 Then you should see Import page:
 
-> ![Import page](../images/prometheus-grafana/grafana-2-2020-09-15-19-18-50-Window.png)
+> ![Import page](./images/prometheus-grafana/grafana-2-2020-09-15-19-18-50-Window.png)
 
 In the _Grafana.com dashboard url or id_ write _**13015**_ (as this is ID of the Robonomic dashboard)
 
-> ![Import Robonomic dashboard](../images/prometheus-grafana/grafana-3-2020-09-15-19-18-50-Window.png)
+> ![Import Robonomic dashboard](./images/prometheus-grafana/grafana-3-2020-09-15-19-18-50-Window.png)
 
 After loading external dashboard you will get this screen:
 
-> ![XRT 13015 dashboard import](../images/prometheus-grafana/grafana-4-2020-09-15-19-18-50-Window.png)
+> ![XRT 13015 dashboard import](./images/prometheus-grafana/grafana-4-2020-09-15-19-18-50-Window.png)
 
 The last step is to choose previously created **_Data Source_** and click _**Import**_
 
-> ![Prometheus as a DataSource](../images/prometheus-grafana/grafana-5-2020-09-15-19-18-50-Window.png)
+> ![Prometheus as a DataSource](./images/prometheus-grafana/grafana-5-2020-09-15-19-18-50-Window.png)
 
 THAT'S IT ! At this point you should see imported dashboard. 
 

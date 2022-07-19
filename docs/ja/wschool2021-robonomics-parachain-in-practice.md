@@ -34,27 +34,27 @@ ssh -f -N -L 9989:127.0.0.1:9989 root@REMOTE_SERVER_IP
 ```
 その後、あなたは、 https://parachain.robonomics.network/ で `ws://127.0.0.1:9944`と `ws://127.0.0.1:9988`と `ws://127.0.0.1:9989` を使うことができます。
 
-![relay](../images/ws_lesson4/upcoming.jpg)
+![relay](./images/ws_lesson4/upcoming.jpg)
 
 少し前のparachainは登録しておくべきです。
 
-![relay2](../images/ws_lesson4/parachains.jpg)
+![relay2](./images/ws_lesson4/parachains.jpg)
 
 そして、ブロックの生産を開始する。
 
-![relay3](../images/ws_lesson4/parachains2.jpg)
+![relay3](./images/ws_lesson4/parachains2.jpg)
 
 次のステップとして、parachain間でメッセージをやり取りするためのHRMPチャネルを作成しましょう。relaychainのページにある`sudo`モジュールコールを使ってみます。
 
-![hrmp](../images/ws_lesson4/hrmp.jpg)
+![hrmp](./images/ws_lesson4/hrmp.jpg)
 
 チャネルができると、XCMコールが使えるようになります。`datalogXcm`パレット（`datalog`パレットのXCM版）を使ってみましょう。
 
-![datalogXcmSend](../images/ws_lesson4/datalogXcmSend.jpg)
+![datalogXcmSend](./images/ws_lesson4/datalogXcmSend.jpg)
 
 第2パラダイムのメッセージの結果として、`datalog` パレットが呼び出され、データがチェーンに書き込まれます。
 
-![datalogXcmRecv](../images/ws_lesson4/datalogXcmRecv.jpg)
+![datalogXcmRecv](./images/ws_lesson4/datalogXcmRecv.jpg)
 
 
 結果として、この例は、XCMが標準的なRobonomicsパレットのクロスチェーン使用に対して、どのように使用できるかを示しています。

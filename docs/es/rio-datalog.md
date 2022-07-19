@@ -32,7 +32,7 @@ and see what happened.
 
 In the Dapp go to Developer -> Chain state. In the "selected state query" list choose datalog and below choose your account. Click plus button on the right and you should see the following:
 
-![Robonomics Chain State Datalog](../images/robonomics-dapp-chain-state-datalog.jpg "Robonomics Chain State Datalog")
+![Robonomics Chain State Datalog](./images/robonomics-dapp-chain-state-datalog.jpg "Robonomics Chain State Datalog")
 
 ## Remote
 If your local node is configured differently from defaults or you have a remote node, it's possible to specify it with `--remote` option
