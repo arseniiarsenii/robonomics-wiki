@@ -9,7 +9,7 @@
     </div>
 
     <nav class="grid-navigation">
-      <g-link :to="$path('/docs/', $store.state.locale)" :aria-label="$st('Menu', $store.state.locale) + ' ' + $st('Enter Nav 1', $store.state.locale)">{{$st('Enter Nav 1', $store.state.locale)}}</g-link>
+      <g-link :to="$path('/docs/getting-started/', $store.state.locale)" :aria-label="$st('Menu', $store.state.locale) + ' ' + $st('Enter Nav 1', $store.state.locale)">{{$st('Enter Nav 1', $store.state.locale)}}</g-link>
       <g-link :to="$path('/docs/playground-overview/', $store.state.locale)" :aria-label="$st('Menu', $store.state.locale) + ' ' + $st('Enter Nav 2', $store.state.locale)">{{$st('Enter Nav 2', $store.state.locale)}}</g-link>
       <g-link :to="$path('/docs/robonomics-test-network-manual/', $store.state.locale)" :aria-label="$st('Menu', $store.state.locale) + ' ' + $st('Enter Nav 3', $store.state.locale)">{{$st('Enter Nav 3', $store.state.locale)}}</g-link>
       <g-link :to="$path('/docs/connect-sensor-to-robonomics/', $store.state.locale)" :aria-label="$st('Menu', $store.state.locale) + ' ' + $st('Enter Nav 4', $store.state.locale)">{{$st('Enter Nav 4', $store.state.locale)}}</g-link>

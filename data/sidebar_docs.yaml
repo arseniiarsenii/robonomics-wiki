@@ -3,7 +3,7 @@
   items:
     - title_en: Introduction
       title_ru: Введение
-      link: /docs/
+      link: /docs/getting-started
     - title_en: DEMO "Get Weather on Fuji Mountain"
       title_es: DEMO "Obtenga el clima en la montaña de Fuji"
       link: /docs/get-weather-on-fuji-mountain
